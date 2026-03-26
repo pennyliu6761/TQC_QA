@@ -378,6 +378,7 @@ for i in range(1,n+1):
 ## Python 308 迴圈位數加總
 設計說明：
 請使用迴圈敘述撰寫一程式，要求使用者輸入一個數字，此數字代表後面測試資料的數量。每一筆測試資料是一個正整數（由使用者輸入），將此正整數的每位數全部加總起來。
+
 ![](https://i.imgur.com/3dkncmL.png)
 
 ### 解法(1)
@@ -434,7 +435,8 @@ for i in range(1, m + 1):
 ## Python 310 迴圈公式計算
 設計說明：
 請使用迴圈敘述撰寫一程式，讓使用者輸入正整數n (1 < n)，計算以下公式的總和並顯示結果：
-$$ \frac{1}{1+\sqrt{2}} + \frac{1}{\sqrt{2}+\sqrt{3}} + \frac{1}{\sqrt{3}+\sqrt{4}} + ... + \frac{1}{\sqrt{n-1}+\sqrt{n}} $$
+
+$$\frac{1}{1+\sqrt{2}} + \frac{1}{\sqrt{2}+\sqrt{3}} + \frac{1}{\sqrt{3}+\sqrt{4}} + ... + \frac{1}{\sqrt{n-1}+\sqrt{n}}$$
 
 提示：輸出結果至小數點後四位。
 ![](https://i.imgur.com/yIf2R5l.png)
