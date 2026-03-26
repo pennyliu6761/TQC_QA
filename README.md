@@ -1156,7 +1156,9 @@ print('Sum:',sum(s1))
 ## Python 705 子集合與超集合
 設計說明：
 請撰寫一程式，依序輸入五個、三個、九個整數，並各自儲存到集合set1、set2、set3中。接著回答：set2是否為set1的子集合（subset）？set3是否為set1的超集合（superset）？
+
 ![](https://i.imgur.com/IknyNoc.png)
+
 ```python
 set1 = set()
 set2 = set()
@@ -1182,7 +1184,9 @@ print('set3 is superset of set1:',str(set3.issuperset(set1)))
 全字母句（Pangram）是英文字母表所有的字母都出現至少一次（最好只出現一次）的句子。請撰寫一程式，要求使用者輸入一正整數k（代表有k筆測試資料），每一筆測試資料為一句子，程式判斷該句子是否為Pangram，並印出對應結果True（若是）或False（若不是）。
 
 提示：不區分大小寫字母
+
 ![](https://i.imgur.com/G6cKzQm.png)
+
 ### 解法(1)
 ```python
 count= eval(input())
@@ -1222,7 +1226,9 @@ for i in range(n):
 請撰寫一程式，輸入X組和Y組各自的科目至集合中，以字串"end"作為結束點（集合中不包含字串"end"）。請依序分行顯示(1) X組和Y組的所有科目、(2)X組和Y組的共同科目、(3)Y組有但X組沒有的科目，以及(4) X組和Y組彼此沒有的科目（不包含相同科目）。
 
 提示：科目須參考範例輸出樣本，依字母由小至大進行排序。
+
 ![](https://i.imgur.com/aU6nE2w.png)
+
 ```python
 xS = set()
 yS = set()
@@ -1244,7 +1250,9 @@ print(sorted(yS.symmetric_difference(xS)))
 ## Python 708 詞典合併
 設計說明：
 請撰寫一程式，自行輸入兩個詞典（以輸入鍵值"end"作為輸入結束點，詞典中將不包含鍵值"end"），將此兩詞典合併，並根據key值字母由小到大排序輸出，如有重複key值，後輸入的key值將覆蓋前一key值。
+
 ![](https://i.imgur.com/zji2PJk.png)
+
 ### 解法(1)
 ```python
 x={}
@@ -1284,7 +1292,9 @@ for i in sorted(dc.keys()):
 ## Python 709 詞典排序
 設計說明：
 請撰寫一程式，輸入一顏色詞典color_dict（以輸入鍵值"end"作為輸入結束點，詞典中將不包含鍵值"end"），再根據key值的字母由小到大排序並輸出。
+
 ![](https://i.imgur.com/pbCDGFu.png)
+
 ```python
 d= {}
 while True:
@@ -1298,7 +1308,9 @@ for i in sorted(d.keys()):
 ## Python 710 詞典搜尋
 設計說明：
 請撰寫一程式，為一詞典輸入資料（以輸入鍵值"end"作為輸入結束點，詞典中將不包含鍵值"end"），再輸入一鍵值並檢視此鍵值是否存在於該詞典中。
+
 ![](https://i.imgur.com/1ix4UEA.png)
+
 ```python
 d = {}
 while True:
@@ -1313,7 +1325,9 @@ print(search in d.keys())
 ## Python 801 字串索引
 設計說明：
 請撰寫一程式，要求使用者輸入一字串，顯示該字串每個字元的索引。
+
 ![](https://i.imgur.com/ZimRdua.png)
+
 ```python
 n=str(input(''))
 for i in range(0,len(n)):
@@ -1322,7 +1336,9 @@ for i in range(0,len(n)):
 ## Python 802 字元對應
 設計說明：
 請撰寫一程式，要求使用者輸入一字串，顯示該字串每個字元的對應ASCII碼及其總和。
+
 ![](https://i.imgur.com/L7v9A7R.png)
+
 ```python
 n=str(input(''))
 sum=0
@@ -1334,7 +1350,9 @@ print(sum)
 ## Python 803 倒數三個詞
 設計說明：
 請撰寫一程式，讓使用者輸入一個句子（至少有五個詞，以空白隔開），並輸出該句子倒數三個詞。
+
 ![](https://i.imgur.com/5G1SjJ5.png)
+
 ```python
 my_list =list(map(str, input("").split()))
 print(my_list[-3],my_list[-2],my_list[-1])
@@ -1344,6 +1362,7 @@ print(my_list[-3],my_list[-2],my_list[-1])
 請撰寫一程式，讓使用者輸入一字串，分別將該字串轉換成全部大寫以及每個字的第一個字母大寫。
 
 ![](https://i.imgur.com/TvxWDHC.png)
+
 ### 解法(1)
 ```python
 n=input()
@@ -1374,7 +1393,9 @@ for i in range(1,len(n)):
 ## Python 805 字串輸出
 設計說明：
 請撰寫一程式，要求使用者輸入一個長度為6的字串，將此字串分別置於10個欄位的寬度的左邊、中間和右邊，並顯示這三個結果，左右皆以直線 |（Vertical bar）作為邊界。
+
 ![](https://i.imgur.com/0waajN7.png)
+
 ```python
 n=input()
 print('|{:<10s}|'.format(n))
@@ -1385,7 +1406,9 @@ print('|{:>10s}|'.format(n))
 ## Python 806 字元次數計算
 設計說明：
 請撰寫一程式，讓使用者輸入一字串和一字元，並將此字串及字元作為參數傳遞給名為compute()的函式，此函式將回傳該字串中指定字元出現的次數，接著再輸出結果。
+
 ![](https://i.imgur.com/buqcExa.png)
+
 ### 解法(1)
 ```python
 def compute(Str, s):  print(f'{s} occurs {Str.count(s)} time(s)')
@@ -1412,7 +1435,9 @@ compute(input(),input())
 ## Python 807 字串加總
 設計說明：
 請撰寫一程式，要求使用者輸入一字串，該字串為五個數字，以空白隔開。請將此五個數字加總（Total）並計算平均（Average）。
+
 ![](https://i.imgur.com/K4etyUx.png)
+
 ```python
 m=list(map(int,input().split()))
 j=sum=0
@@ -1425,7 +1450,9 @@ print(f'Average = {sum/j}')
 ## Python 808 社會安全碼
 設計說明：
 請撰寫一程式，提示使用者輸入一個社會安全碼SSN，格式為ddd-dd-dddd，d表示數字。若格式完全符合（正確的SSN）則顯示【Valid SSN】，否則顯示【Invalid SSN】
+
 ![](https://i.imgur.com/eooxlKY.png)
+
 ```python
 num=input().replace("-","")
 if(num.isdigit()):  print('Valid SSN')  
@@ -1439,6 +1466,7 @@ else:               print('Invalid SSN')
 　c. 至少要有一個大寫英文字母。
 　d. 若符合上述三項規則，程式將顯示檢查結果為【Valid password】，否則顯示【Invalid password】。
  ![](https://i.imgur.com/qN3UTMg.png)
+
 ```python
 n = input()
 b=0
@@ -1452,7 +1480,9 @@ else:   print("Invalid password")
 請撰寫一程式，首先要求使用者輸入正整數k（1 <= k <= 100），代表有k筆測試資料。每一筆測試資料是一串數字，每個數字之間以一空白區隔，請找出此串列數字中最大值和最小值之間的差。
 
 提示：差值輸出到小數點後第二位。
+
 ![](https://i.imgur.com/bGDkwHp.png)
+
 ```python
 for i in range(int(input())):
    data=list(map(float,input().split()))
@@ -1463,7 +1493,9 @@ for i in range(int(input())):
 
 設計說明：
 請撰寫一程式，將使用者輸入的五筆資料寫入到write.txt（若不存在，則讓程式建立它），每一筆資料為一行，包含學生名字和期末總分，以空白隔開。檔案寫入完成後要關閉。
+
 ![](https://i.imgur.com/QYyrXqk.png)
+
 ```python
 n = open('write.txt','w')
 for i in range(5):
@@ -1474,7 +1506,9 @@ n.close()
 
 設計說明：
 請撰寫一程式，讀取read.txt的內容（內容為數字，以空白分隔）並將這些數字加總後輸出。檔案讀取完成後要關閉。
+
 ![](https://i.imgur.com/2GVd4Y0.png)
+
 ```python
 f=open("read.txt")
 w=f.read()
@@ -1487,7 +1521,9 @@ print(total)
 ## Python 903 成績資料
 設計說明：
 請撰寫一程式，要求使用者輸入五個人的名字並加入到data.txt的尾端。之後再顯示此檔案的內容。
+
 ![](https://i.imgur.com/PwgHiiQ.png)
+
 ```python
 with open("data.txt","a+",encoding="utf-8") as file:
     for i in range(5):
@@ -1503,7 +1539,9 @@ with open("data.txt","a+",encoding="utf-8") as file:
 請撰寫一程式，讀取read.txt（每一列的格式為名字和身高、體重，以空白分隔）並顯示檔案內容、所有人的平均身高、平均體重以及最高者、最重者。
 
 提示：輸出浮點數到小數點後第二位。
+
 ![](https://i.imgur.com/IpWAZLx.png)
+
 ```python
 height=[]
 weight=[]
@@ -1540,7 +1578,9 @@ print("The heaviest is {} with {:.2f}kg".format(wname,maxw))
 ## Python 905 字串資料刪除
 設計說明：
 請撰寫一程式，要求使用者輸入檔案名稱data.txt和一字串s，顯示該檔案的內容。接著刪除檔案中的字串s，顯示刪除後的檔案內容並存檔。
+
 ![](https://i.imgur.com/FxL51Kl.png)
+
 ```python
 f=input()
 s=input()
@@ -1557,7 +1597,9 @@ with open(f,"r+",encoding="utf-8")as file:
 ## Python 906 字串資料取代
 設計說明：
 請撰寫一程式，要求使用者輸入檔名data.txt、字串s1和字串s2。程式將檔案中的字串s1以s2取代之。
+
 ![](https://i.imgur.com/5M9ytbZ.png)
+
 ```python
 fn,s1,s2=input(),input(),input()
 f=open(fn,'r')
@@ -1571,7 +1613,9 @@ print(w)
 ## Python 907 詳細資料顯示
 設計說明：
 請撰寫一程式，要求使用者輸入檔名read.txt，顯示該檔案的行數、單字數（簡單起見，單字以空白隔開即可，忽略其它標點符號）以及字元數（不含空白）。
+
 ![](https://i.imgur.com/ACHMcMR.png)
+
 ```python
 f_name = input()
 f_line = f_word = f_char = 0
@@ -1589,7 +1633,9 @@ print('%d character(s)' %f_char)
 ## Python 908 單字次數計算
 設計說明：
 請撰寫一程式，要求使用者輸入檔名read.txt，以及檔案中某單字出現的次數。輸出符合次數的單字，並依單字的第一個字母大小排序。（單字的判斷以空白隔開即可）
+
 ![](https://i.imgur.com/ON7rGu7.png)
+
 ```python
 fn,num=input(),eval(input())
 f=open(fn,'r')
@@ -1603,7 +1649,9 @@ for i in setsp1:
 ## Python 909 聯絡人資料
 設計說明：
 請撰寫一程式，將使用者輸入的五個人的資料寫入data.dat檔，每一個人的資料為姓名和電話號碼，以空白分隔。再將檔案加以讀取並顯示檔案內容。
+
 ![](https://i.imgur.com/0mOPgmD.png)
+
 ```python
 with open("data.dat","w",encoding="UTF-8") as fp:
   for i in range(5):
@@ -1617,7 +1665,9 @@ with open("data.dat","r",encoding="UTF-8") as fp:
 ## Python 910 學生基本資料
 設計說明：
 請撰寫一程式，要求使用者讀入read.dat（以UTF-8編碼格式讀取），第一列為欄位名稱，第二列之後是個人記錄。請輸出檔案內容並顯示男生人數和女生人數（根據"性別"欄位，0為女性、1為男性）。
+
 ![](https://i.imgur.com/igVg9hc.png)
+
 ```python
 M=0
 F=0
