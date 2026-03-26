@@ -5,7 +5,7 @@
 ![](https://i.imgur.com/E5v7Tkh.png)
 
 
-```python=
+```python
 a=input()
 b=input()
 c=input()
@@ -18,7 +18,7 @@ print('|{:<5s} {:<5s}|'.format(c,d))
 ##  Python 102 浮點數格式化輸出
 ![](https://i.imgur.com/gBlgFuu.png)
 
-```python=
+```python
 a=float(input())
 b=float(input())
 c=float(input())
@@ -33,7 +33,7 @@ print("|{:<7.2f} {:<7.2f}|".format(c,d))
 ## Python 103 字串格式化輸出
 ![](https://i.imgur.com/Yq6oTRc.png)
 
-```python=
+```python
 a=input()
 b=input()
 c=input()
@@ -48,7 +48,7 @@ print('|{:<10s} {:<10s}|'.format(c,d))
 ## Python 104 圓形面積計算
 ![](https://i.imgur.com/nVQFNqI.png)
 
-```python=
+```python
 import math
 
 r=eval(input(""))
@@ -60,7 +60,7 @@ print("Area = %.2f"%(r*r*math.pi))
 ## Python 105 矩形面積計算
 ![](https://i.imgur.com/LTPCKDz.png)
 
-```python=
+```python
 h=eval(input())
 w=eval(input())
 print('Height = %.2f'%h)
@@ -72,7 +72,7 @@ print('Area = %.2f'%(w*h))
 
 ## Python 106 公里英哩換算
 ![](https://i.imgur.com/4gEStEQ.png)
-```python=
+```python
 x=float(input())
 y=float(input())
 z=float(input())
@@ -81,7 +81,7 @@ print("Speed = %.1f"%(s))
 ```
 ## Python 107 數值計算
 ![](https://i.imgur.com/cgvyQDs.png)
-```python=
+```python
 l=[0]*5
 l[0]=eval(input())
 l[1]=eval(input())
@@ -99,7 +99,7 @@ print('Average = %.1f'%(sum(l)/len(l)))
 提示1：歐式距離 $= \sqrt{((x1-x2)^2+(y1-y2)^2)}$
 提示2：兩座標的歐式距離，輸出到小數點後第4位
 ![](https://i.imgur.com/GAAdJ22.png)
-```python=
+```python
 x1=eval(input())
 y1=eval(input())
 x2=eval(input())
@@ -117,7 +117,7 @@ print('Distance = %.4f'% ((x1-x2)**2+(y1-y2)**2)**0.5)
 提示3：輸出浮點數到小數點後第四位。
 ![](https://i.imgur.com/u2vl0WZ.png)
 
-```python=
+```python
 import math
 s=eval(input())
 print('Area = %.4f'%((5*s**2)/(4*math.tan(math.pi/5))))
@@ -131,7 +131,7 @@ print('Area = %.4f'%((5*s**2)/(4*math.tan(math.pi/5))))
 提示2：正n邊形面積的公式如下：$Area = (n * s^2) / (4 * tan(pi/n))$
 提示3：輸出浮點數到小數點後第四位
 ![](https://i.imgur.com/eooV6nO.png)
-```python=
+```python
 import math
 n=eval(input())
 s=eval(input())
@@ -143,7 +143,7 @@ print('Area = %.4f'%((n*s**2)/(4*math.tan(math.pi/n))))
 請使用選擇敘述撰寫一程式，讓使用者輸入一個正整數，然後判斷它是否為偶數（even）。
 ![](https://i.imgur.com/I6rcTPP.png)
 
-```=python=
+```=python
 n=int(input())
 if(n%2==0): print(f'{n} is an even number.')
 else :  print(f'{n} is not an even number.')
@@ -152,7 +152,7 @@ else :  print(f'{n} is not an even number.')
 2. 設計說明：
 請使用選擇敘述撰寫一程式，讓使用者輸入一個正整數，然後判斷它是3或5的倍數，顯示【x is a multiple of 3.】或【x is a multiple of 5.】；若此數值同時為3與5的倍數，顯示【x is a multiple of 3 and 5.】；如此數值皆不屬於3或5的倍數，顯示【x is not a multiple of 3 or 5.】，將使用者輸入的數值代入x。
 ![](https://i.imgur.com/QQ0gQBX.png)
-```python=
+```python
 x=int(input())
 if(x%3==0 and x%5!=0): print(f'{x} is a multiple of 3.')
 elif(x%3!=0 and x%5==0): print(f'{x} is a multiple of 5.')
@@ -163,7 +163,7 @@ else : print(f'{x} is not a multiple of 3 or 5.')
 2. 設計說明：
 請使用選擇敘述撰寫一程式，讓使用者輸入一個西元年份，然後判斷它是否為閏年（leap year）或平年。其判斷規則為：每四年一閏，每百年不閏，但每四百年也一閏。
 ![](https://i.imgur.com/cT40S1v.png)
-```python=
+```python
 n=int(input())
 if(n%4==0 and (n%400==0 or n%100!=0)): print(f'{n} is a leap year.')
 else : print(f'{n} is not a leap year.')
@@ -173,7 +173,7 @@ else : print(f'{n} is not a leap year.')
 2. 設計說明：
 請使用選擇敘述撰寫一程式，讓使用者輸入兩個整數a、b，然後再輸入一算術運算子 (+、-、*、/、//、%） ，輸出經過運算後的結果。
 ![](https://i.imgur.com/7nQvOeH.png)
-```python=
+```python
 a=eval(input())
 b=eval(input())
 c=str(input())
@@ -188,7 +188,7 @@ elif(c=='%'): print(a%b)
 2. 設計說明：
 請使用選擇敘述撰寫一程式，讓使用者輸入一個字元，判斷它是包括大、小寫的英文字母（alphabet）、數字（number）、或者其它字元（symbol）。例如：a為英文字母、9為數字、$為其它字元。
 ![](https://i.imgur.com/zMFwyzJ.png)
-``` python=
+``` python
 n=str(input())
 if(n.isdigit()): print(f'{n} is a number.')
 elif(n.isalpha()) : print(f'{n} is an alphabet.')
@@ -205,7 +205,7 @@ else : print(f'{n} is a symbol.')
 60 ~ 69	C
 <= 59	F
 ![](https://i.imgur.com/mmShXrD.png)
-``` python=
+``` python
 n=int(input())
 if(n>=80 and n<=100) : print('A')
 elif(n>=70 and n<80) : print('B')
@@ -222,7 +222,7 @@ else : print('F')
 28,000（含）以上	8折
 38,000（含）以上	7折
 
-``` python=
+``` python
 n=int(input())
 if(n>=8000 and n<18000) : print(n*0.95)
 elif(n>=18000 and n<28000): print(n*0.9)
@@ -235,7 +235,7 @@ elif(n>=38000): print(n*0.7)
 
 提示：轉換規則 = 十進位0~9的十六進位值為其本身，十進位10~15的十六進位值為A~F。
 ![](https://i.imgur.com/So8krVa.png)
-``` python=
+``` python
 n=eval(input())
 if(n>=0 and n<10) : print(n)
 elif (n==10) : print('A')
@@ -251,7 +251,7 @@ elif (n==15) : print('F')
 
 提示：計算平面上兩點距離的公式：$\sqrt{(x1-x2)^2 + (y1-y2)^2}\quad$
 ![](https://i.imgur.com/vupvPIn.png)
-``` python=
+``` python
 x = eval(input())
 y = eval(input())
 d = ((x-5)**2+(y-6)**2)**0.5
@@ -264,7 +264,7 @@ else: print('Outside')
 
 提示：檢查方法 = 任意兩個邊長之總和大於第三邊長
 ![](https://i.imgur.com/Xw2VRLp.png)
-``` python=
+``` python
 a=int(input())
 b=int(input())
 c=int(input())
@@ -276,7 +276,7 @@ else : print(Invalid)
 2. 設計說明：
 請使用迴圈敘述撰寫一程式，讓使用者輸入兩個正整數a、b（a < b），利用迴圈計算從a開始連加到b的總和。例如：輸入a=1、b=100，則輸出結果為5050（1 + 2 + … + 100 = 5050）。
 ![](https://i.imgur.com/LuXamdd.png)
-```python=
+```python
 a=int(input())
 b=int(input())
 sum=0
@@ -288,7 +288,7 @@ print(sum)
 2. 設計說明：
 請使用迴圈敘述撰寫一程式，讓使用者輸入兩個正整數a、b（a < b），利用迴圈計算從a開始的偶數連加到b的總和。例如：輸入a=1、b=100，則輸出結果為2550（2 + 4 + … + 100 = 2550）。
 ![](https://i.imgur.com/olFEtov.png)
-```python=
+```python
 a=int(input())
 b=int(input())
 sum=0
@@ -303,7 +303,7 @@ print(sum)
 
 提示：輸出欄寬為4，且需靠右對齊。
 ![](https://i.imgur.com/1EqWR6p.png)
-```python=
+```python
 a=eval(input())
 c=0
 for i in range(1,a+1):
@@ -316,7 +316,7 @@ for i in range(1,a+1):
 2. 設計說明：
 請使用迴圈敘述撰寫一程式，讓使用者輸入一個正整數a，利用迴圈計算從1到a之間，所有5之倍數數字總和。
 ![](https://i.imgur.com/xXA118o.png)
-```python=
+```python
 n=eval(input())
 sum=0
 for i in range(1,n+1):
@@ -330,7 +330,7 @@ print(sum)
 ![](https://i.imgur.com/FTFy6VI.png)
 
 **解法(1**
-```python=
+```python
 a=int(input())
 if(a==0):
     print(0)
@@ -339,7 +339,7 @@ while (a!=0) :
     a=a//10
 ```
 **解法(2**
-```python=
+```python
 a=str(input())
 reversed_string=''.join(reversed(a))
 print(reversed_string)
@@ -348,7 +348,7 @@ print(reversed_string)
 2. 設計說明：
 請使用迴圈敘述撰寫一程式，讓使用者輸入一個正整數n，利用迴圈計算並輸出n!的值。
 ![](https://i.imgur.com/Qne2ROT.png)
-```python=
+```python
 n=eval(input())
 sum=1
 for i in range(1,n+1):
@@ -362,7 +362,7 @@ print(sum)
 
 (2) 每項運算式需進行格式化排列整齊，每個運算子及運算元輸出的欄寬為2，而每項乘積輸出的欄寬為4，皆靠左對齊不跳行。
 ![](https://i.imgur.com/PkSLngw.png)
-```python=
+```python
 n=int(input())
 for i in range(1,n+1):
   for j in range(1,n+1):
@@ -375,14 +375,14 @@ for i in range(1,n+1):
 ![](https://i.imgur.com/3dkncmL.png)
 
 ### 解法(1   : 新學的寫法，超讚
-```python=
+```python
 for i in range(int(input())):
     n=str(input())
     a = [int(j) for j in list(str(n))] # 將對應的數字轉換成數字串列，例如 11 轉換成 [1, 1]
     print("Sum of all digits of "+str(n)+" is "+str(sum(a)))
 ```
 ### 解法(2
-```python=
+```python
 a=int(input())
 for i in range(a):
     ans=0
@@ -392,7 +392,7 @@ for i in range(a):
     print("Sum of all digits of "+str(n)+" is "+str(ans))
 ```
 ### 解法(3
-```python=
+```python
 n = eval(input())
 for i in range(n):
     num = eval(input()) 
@@ -416,7 +416,7 @@ for i in range(n):
 過了三個月，存款將是：10096.06 + 10096.06 * 5.75 / 1200 = 10144.44
 以此類推。
 ![](https://i.imgur.com/OVKIioN.png)
-```python=
+```python
 total = eval(input())
 y = eval(input())
 m = eval(input())
@@ -432,7 +432,7 @@ $$ \frac{1}{1+\sqrt{2}} + \frac{1}{\sqrt{2}+\sqrt{3}} + \frac{1}{\sqrt{3}+\sqrt{
 
 提示：輸出結果至小數點後四位。
 ![](https://i.imgur.com/yIf2R5l.png)
-```python=
+```python
 x=eval(input())
 i=1
 tmp=0
@@ -447,7 +447,7 @@ print('%.4f'%(tmp))
 2. 設計說明：
 請撰寫一程式，由使用者輸入十個數字，然後找出其最小值，最後輸出最小值。
 ![](https://i.imgur.com/5DgKZKm.png)
-```python=
+```python
 num = []
 for i in range(10):
     num.append(eval(input()))
@@ -457,7 +457,7 @@ print(min(num))
 2. 設計說明：
 請撰寫一程式，讓使用者輸入數字，輸入的動作直到輸入值為9999才結束，然後找出其最小值，並輸出最小值。
 ![](https://i.imgur.com/C2cBH1x.png)
-```python=
+```python
 n= []
 while True:
         value = eval(input())
@@ -470,7 +470,7 @@ print(min(n))
 2. 設計說明：
 請撰寫一程式，讓使用者輸入兩個正整數a、b（a<=b），輸出從a到b（包含a和b）之間4或9的倍數（一列輸出十個數字、欄寬為4、靠左對齊）以及倍數之個數、總和。
 ![](https://i.imgur.com/ftgAeDk.png)
-```python=
+```python
 a = int( input() )
 b = int( input() )
 total = 0
@@ -490,7 +490,7 @@ print(total)
 2. 設計說明：
 請撰寫一程式，讓使用者輸入一個正整數，將此正整數以反轉的順序輸出，並判斷如輸入0，則輸出為0。
 ![](https://i.imgur.com/6jIG6q3.png)
-```python=
+```python
 n=str(input())
 s=''.join(reversed(n))
 print(s)
@@ -506,7 +506,7 @@ print(s)
 60 ~ 69	D
 0 ~ 59	E
 ![](https://i.imgur.com/j8bGTWB.png)
-```python=
+```python
 while True : 
     n=int(input())
     if n==-9999: break
@@ -532,7 +532,7 @@ BMI < 18.5	under weight
 30 <= BMI	fat
 提示：$BMI = 體重(kg)/身高^2(m)$，輸出浮點數到小數點後第二位。 不需考慮男性或女性標準。
 ![](https://i.imgur.com/2cgAcvW.png)
-```python=
+```python
 while True:
     H = float(input())
     if H == -9999:   break
@@ -550,7 +550,7 @@ while True:
 (1) 請撰寫一程式，以不定數迴圈的方式讓使用者輸入西元年份，然後判斷它是否為閏年（leap year）或平年。其判斷規則如下：每四年一閏，每百年不閏，但每四百年也一閏。
 (2) 假設此不定數迴圈輸入-9999則會結束此迴圈。
 ![](https://i.imgur.com/eq4LHsb.png)
-```python=
+```python
 year = eval(input())
 while year!=-9999:
   if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
@@ -563,7 +563,7 @@ while year!=-9999:
 2. 設計說明：
 請撰寫一程式，讓使用者輸入十個整數，計算並輸出偶數和奇數的個數。
 ![](https://i.imgur.com/qWhBFjV.png)
-```python=
+```python
 even = odd = 0
 for _ in range(10):
     if int(input()) % 2 == 0: even += 1
@@ -576,7 +576,7 @@ print(f'Odd numbers: {odd}')
 某次選舉有兩位候選人，分別是No.1: Nami、No.2: Chopper。請撰寫一程式，輸入五張選票，輸入值如為1即表示針對1號候選人投票；輸入值如為2即表示針對2號候選人投票，如輸入其他值則視為廢票。每次投完後需印出目前每位候選人的得票數，最後印出最高票者為當選人；如最終計算有相同的最高票數者或無法選出最高票者，顯示【=> No one won the election.】。
 ![](https://i.imgur.com/pUfQrYH.png)
 
-```python=
+```python
 count1 = 0
 count2 = 0
 null = 0
@@ -602,7 +602,7 @@ else:
 2. 設計說明：
 請撰寫一程式，依照使用者輸入的n，畫出對應的等腰三角形。
 ![](https://i.imgur.com/MbIQeI6.png)
-```python=
+```python
 n = int(input())
 for i in range(n, 0, -1):
     print(' '*(i-1) + '*'*(1+2*(n-i)))
@@ -612,7 +612,7 @@ for i in range(n, 0, -1):
 2. 設計說明：
 請撰寫一程式，呼叫函式compute()，該函式功能為讓使用者輸入系別（Department）、學號（Student ID）和姓名（Name）並顯示這些訊息。
 ![](https://i.imgur.com/6rTdqdI.png)
-```python=
+```python
 def compute():
     department = input()
     studentid =  input()
@@ -628,13 +628,13 @@ compute()
 ![](https://i.imgur.com/DtPDrYZ.png)
 
 ### 解法(1
-```python=
+```python
 def compute(x,y):
   print(x*y)
 compute(int(input()),int(input()))
 ```
 ### 解法(2
-```python=
+```python
 def compute(x,y):
     return x*y
 x = eval(input())
@@ -646,7 +646,7 @@ print(compute(x,y))
 2. 設計說明：
 請撰寫一程式，讓使用者輸入兩個整數，接著呼叫函式compute()，此函式接收兩個參數a、b，並回傳從a連加到b的和。
 ![](https://i.imgur.com/hEfFpTl.png)
-```python=
+```python
 def compute(a,b):
     ans=0
     for i in range(a,b+1):
@@ -661,13 +661,13 @@ print(compute(x,y))
 請撰寫一程式，讓使用者輸入兩個整數，接著呼叫函式compute()，此函式接收兩個參數a、b，並回傳$a^b$的值。
 ![](https://i.imgur.com/9A4QsOh.png)
 ### 解法(1
-```python=
+```python
 def compute(x,y):
   print(x**y)
 compute(int(input()),int(input()))
 ```
 ### 解法(2
-```python=
+```python
 def compute(a,b):
     return pow(a,b)
 x = eval(input())
@@ -680,7 +680,7 @@ print(compute(x,y))
 
 提示：輸出的每一個字元後方有一空格。
 ![](https://i.imgur.com/nOcjTfI.png)
-```python=
+```python
 def compute(a,x,y):
     for i in range(y):
         for j in range(x):
@@ -701,7 +701,7 @@ compute(a,x,y)
 回傳方程式的解，無須考慮小數點位數
 ![](https://i.imgur.com/HDSR1n3.png)
 ### 解法(1
-```python=
+```python
 def compute(a,b,c):
    temp=b**2-4*a*c
    if(temp<0): print('Your equation has no root.')
@@ -713,7 +713,7 @@ def compute(a,b,c):
 compute(int(input()),int(input()),int(input()))
 ```
 ### 解法(2
-```python=
+```python
 def compute(a,b,c):
     q=b**2-4*a*c
     
@@ -734,7 +734,7 @@ compute(a,b,c)
 2. 設計說明：
 請撰寫一程式，讓使用者輸入一個整數x，並將x傳遞給名為compute()的函式，此函式將回傳x是否為質數（Prime number）的布林值，接著再將判斷結果輸出。如輸入值為質數顯示【Prime】，否則顯示【Not Prime】。
 ![](https://i.imgur.com/voIVXoa.png)
-```python=
+```python
 def compute(x):
     if x <= 1:
         return False
@@ -753,7 +753,7 @@ else:
 請撰寫一程式，讓使用者輸入兩個正整數x、y，並將x與y傳遞給名為compute()的函式，此函式回傳x和y的最大公因數。
 ![](https://i.imgur.com/uPuMfVr.png)
 ### 解法(1
-```python=
+```python
 import math 
 def compute(x,y):
   return math.gcd(x,y)
@@ -761,7 +761,7 @@ x,y=eval(input())
 print(compute(x,y))
 ```
 ### 解法(2
-```python=
+```python
 def compute(x,y):
     while(y!=0):
       temp=y
@@ -775,7 +775,7 @@ compute(x,y)
 2. 設計說明：
 請撰寫一程式，讓使用者輸入二個分數，分別是x/y和m/n（其中x、y、m、n皆為正整數），計算這兩個分數的和為p/q，接著將p和q傳遞給名為compute()函式，此函式回傳p和q的最大公因數（Greatest Common Divisor, GCD）。再將p和q各除以其最大公因數，最後輸出的結果必須以最簡分數表示
 ![](https://i.imgur.com/z6Pfjx9.png)
-```python=
+```python
 import math
 def  compute(x,y):
     gcd = math.gcd(x,y)
@@ -795,7 +795,7 @@ print(f'{x}/{y} + {m}/{n} = {int(p/gcd)}/{int(q/gcd)}')
 $$F_0 = 0 $$ $$F_1 = 1 $$ $$F_n = F_{n-1} + F_{n-2} $$
 ![](https://i.imgur.com/osDAZ4N.png)
 ### 解法(1
-```python=
+```python
 def compute(n):                        
     if n > 1:                      
         return compute(n-1) + compute(n-2)  # 遞迴
@@ -805,7 +805,7 @@ for i in range(n):
     print(compute(i), end = ' ')   
 ```
 ### 解法(2
-```python=
+```python
 def compute(n): 
     curr = 1
     pre = 0
@@ -826,7 +826,7 @@ compute(num)
 
 提示：輸出每一個數字欄寬設定為3，每3個一列，靠右對齊。
 ![](https://i.imgur.com/T5tuEVn.png)
-```python=
+```python
 m={}
 total=c=0
 for i in range(0,12):
@@ -847,7 +847,7 @@ print(total)
 
 提示：J、Q、K以及A分別代表11、12、13以及1。
 ![](https://i.imgur.com/Tvq8X4c.png)
-```python=
+```python
 t=0
 for i in range(5):
    n=str(input())
@@ -862,7 +862,7 @@ print(t)
 2. 設計說明：
 請撰寫一程式，要求使用者輸入十個數字並存放在串列中。接著由大到小的順序顯示最大的3個數字。
 ![](https://i.imgur.com/JkxoZ4J.png)
-```python=
+```python
 m=[]
 for i in range(10):
    n=int(input())
@@ -877,7 +877,7 @@ print(m[9],m[8],m[7])
 提示：假設樣本中只有一個眾數。
 ![](https://i.imgur.com/PUMSTBA.png)
 ### 解法(1
-```python=
+```python
 m=[0]*100
 for i in range(10):
    n=int(input())
@@ -886,7 +886,7 @@ print(m.index(max(m)))  #取得位址
 print(max(m))
 ```
 ### 解法(2
-```python=
+```python
 m=[0]*100
 for i in range(10):
    n=int(input())
@@ -902,7 +902,7 @@ print(max(m))
 
 提示：平均值輸出到小數點後第二位。
 ![](https://i.imgur.com/GbiOkvH.png)
-```python=
+```python
 n=[]
 for i in range(10):
   x=eval(input())
@@ -919,7 +919,7 @@ print("%.2f"%(s/(10-2)))
 
 提示：欄寬為4。
 ![](https://i.imgur.com/nRKAiV9.png)
-```python=
+```python
 def compute(r,c):
     for i in range(r):
         for j in range(c):
@@ -935,7 +935,7 @@ compute(r,c)
 
 提示：平均分數輸出到小數點後第二位
 ![](https://i.imgur.com/S4PbmSg.png)
-```python=
+```python
 n=["1st","2nd","3rd"]
 t=[[0 for j in range(5)] for i in range(3)]
 for i in range(3):
@@ -953,7 +953,7 @@ for i in range(3):
 請撰寫一程式，讓使用者建立一個3*3的矩陣，其內容為從鍵盤輸入的整數（不重複），接著輸出矩陣最大值與最小值的索引。
 ![](https://i.imgur.com/wyocxkC.png)
 ### 解法(1
-```python=
+```python
 n=[]
 for i in range(9):   n.append(int(input()))
 m=max(n)
@@ -964,7 +964,7 @@ si=n.index(s)
 print("Index of the smallest number {} is: ({}, {})".format(s,si//3,si%3))
 ```
 ### 解法(2
-```python=
+```python
 a=[]
 for i in range(9):
   n=int(input())
@@ -977,7 +977,7 @@ print(f'Index of the smallest number {min(a)} is: ({(a.index(min(a)))//3}, {(a.i
 2. 設計說明：
 請撰寫一程式，讓使用者建立兩個2*2的矩陣，其內容為從鍵盤輸入的整數，接著輸出這兩個矩陣的內容以及它們相加的結果。
 ![](https://i.imgur.com/oBvmdTv.png)
-```python=
+```python
 L1 = [[0 for i in range(2)] for j in range(2)]
 L2 = [[0 for i in range(2)] for j in range(2)]
 print('Enter matrix 1:')
@@ -1015,7 +1015,7 @@ for i in range(2):
 提示1：平均溫度輸出到小數點後第二位。
 提示2：最高溫度及最低溫度的輸出，如為31時，則輸出31，如為31.1時，則輸出31.1。
 ![](https://i.imgur.com/Z8VoxTg.png)
-```python=
+```python
 L=[]
 for w in range(1,4+1):
   print("Week %d:"%w)
@@ -1033,7 +1033,7 @@ print("Lowest:",min(L))
 2. 設計說明：
 請撰寫一程式，輸入數個整數並儲存至串列中，以輸入-9999為結束點（串列中不包含-9999），再將此串列轉換成數組，最後顯示該數組以及其長度（Length）、最大值（Max）、最小值（Min）、總和（Sum）。
 ![](https://i.imgur.com/FezBH03.png)
-```python=
+```python
 LIST = []
 num = eval(input())
 while num!=-9999:
@@ -1051,7 +1051,7 @@ print('Sum:',sum(TUPLE))
 請撰寫一程式，輸入並建立兩組數組，各以-9999為結束點（數組中不包含-9999）。將此兩數組合併並從小到大排序之，顯示排序前的數組和排序後的串列
 ![](https://i.imgur.com/L1OO3jD.png)
 ### 解法(1
-```python=
+```python
 tuple1 = ()
 num = eval(input('Create tuple1:\n'))
 while num !=-9999:
@@ -1069,7 +1069,7 @@ LIST.sort()
 print('Combined list after sorting:',LIST)
 ```
 ### 解法(2
-```python=
+```python
 t1=()
 print('Create tuple1:')
 while True : 
@@ -1092,7 +1092,7 @@ print('Combined list after sorting:',LIST)
 2. 設計說明：
 請撰寫一程式，輸入一些字串至數組（至少輸入五個字串），以字串"end"為結束點（數組中不包含字串"end"）。接著輸出該數組，再分別顯示該數組的第一個元素到第三個元素和倒數三個元素。
 ![](https://i.imgur.com/7HPFCC4.png)
-```python=
+```python
 TUPLE = ()
 string = input()
 while string != "end":
@@ -1107,7 +1107,7 @@ print(TUPLE[-3:])
 請撰寫一程式，輸入數個整數並儲存至集合，以輸入-9999為結束點（集合中不包含-9999），最後顯示該集合的長度（Length）、最大值（Max）、最小值（Min）、總和（Sum）。
 ![](https://i.imgur.com/Z3gs4it.png)
 ### 解法(1
-```python=
+```python
 set1 = set()
 num = eval(input())
 while num!=-9999:
@@ -1119,7 +1119,7 @@ print('Min:',min(set1))
 print('Sum:',sum(set1))
 ```
 ### 解法(2
-```python=
+```python
 s1=set()
 while True : 
   n=int(input())
@@ -1134,7 +1134,7 @@ print('Sum:',sum(s1))
 2. 設計說明：
 請撰寫一程式，依序輸入五個、三個、九個整數，並各自儲存到集合set1、set2、set3中。接著回答：set2是否為set1的子集合（subset）？set3是否為set1的超集合（superset）？
 ![](https://i.imgur.com/IknyNoc.png)
-```python=
+```python
 set1 = set()
 set2 = set()
 set3 = set()
@@ -1161,7 +1161,7 @@ print('set3 is superset of set1:',str(set3.issuperset(set1)))
 提示：不區分大小寫字母
 ![](https://i.imgur.com/G6cKzQm.png)
 ### 解法(1
-```python=
+```python
 count= eval(input())
 
 alpha=26
@@ -1177,7 +1177,7 @@ for i in range(count):
      print('False')
 ```
 ### 解法(2
-```python=
+```python
 n=int(input())
 for i in range(n):
     a=[0]*26  #初始化 (有26個英文字母)
@@ -1200,7 +1200,7 @@ for i in range(n):
 
 提示：科目須參考範例輸出樣本，依字母由小至大進行排序。
 ![](https://i.imgur.com/aU6nE2w.png)
-```python=
+```python
 xS = set()
 yS = set()
 print('Enter group X\'s subjects:')
@@ -1223,7 +1223,7 @@ print(sorted(yS.symmetric_difference(xS)))
 請撰寫一程式，自行輸入兩個詞典（以輸入鍵值"end"作為輸入結束點，詞典中將不包含鍵值"end"），將此兩詞典合併，並根據key值字母由小到大排序輸出，如有重複key值，後輸入的key值將覆蓋前一key值。
 ![](https://i.imgur.com/zji2PJk.png)
 ### 解法(1
-```python=
+```python
 x={}
 y={}
 print('Create dict1:')
@@ -1243,7 +1243,7 @@ for i in sorted(x.keys()):
     print(i+": "+x[i])
 ```
 ### 解法(2
-```python=
+```python
 dc={}  #其實好像建一個dict就可以了
 print('Create dict1:')
 while True : 
@@ -1262,7 +1262,7 @@ for i in sorted(dc.keys()):
 2. 設計說明：
 請撰寫一程式，輸入一顏色詞典color_dict（以輸入鍵值"end"作為輸入結束點，詞典中將不包含鍵值"end"），再根據key值的字母由小到大排序並輸出。
 ![](https://i.imgur.com/pbCDGFu.png)
-```python=
+```python
 d= {}
 while True:
     key = input('Key: ')
@@ -1276,7 +1276,7 @@ for i in sorted(d.keys()):
 2. 設計說明：
 請撰寫一程式，為一詞典輸入資料（以輸入鍵值"end"作為輸入結束點，詞典中將不包含鍵值"end"），再輸入一鍵值並檢視此鍵值是否存在於該詞典中。
 ![](https://i.imgur.com/1ix4UEA.png)
-```python=
+```python
 d = {}
 while True:
     key = input('Key: ') 
@@ -1291,7 +1291,7 @@ print(search in d.keys())
 2. 設計說明：
 請撰寫一程式，要求使用者輸入一字串，顯示該字串每個字元的索引。
 ![](https://i.imgur.com/ZimRdua.png)
-```python=
+```python
 n=str(input(''))
 for i in range(0,len(n)):
     print('Index of \''+n[i]+'\': '+str(i))
@@ -1300,7 +1300,7 @@ for i in range(0,len(n)):
 2. 設計說明：
 請撰寫一程式，要求使用者輸入一字串，顯示該字串每個字元的對應ASCII碼及其總和。
 ![](https://i.imgur.com/L7v9A7R.png)
-```python=
+```python
 n=str(input(''))
 sum=0
 for i in range(0,len(n)):
@@ -1312,7 +1312,7 @@ print(sum)
 2. 設計說明：
 請撰寫一程式，讓使用者輸入一個句子（至少有五個詞，以空白隔開），並輸出該句子倒數三個詞。
 ![](https://i.imgur.com/5G1SjJ5.png)
-```python=
+```python
 my_list =list(map(str, input("").split()))
 print(my_list[-3],my_list[-2],my_list[-1])
 ```
@@ -1322,13 +1322,13 @@ print(my_list[-3],my_list[-2],my_list[-1])
 
 ![](https://i.imgur.com/TvxWDHC.png)
 ### 解法(1
-```python=
+```python
 n=input()
 print(n.upper())
 print(n.title())
 ```
 ### 解法(2
-```python=
+```python
 #不用函式的寫法，我就閒 2022/6/16
 n=input()
 res = ""
@@ -1352,7 +1352,7 @@ for i in range(1,len(n)):
 2. 設計說明：
 請撰寫一程式，要求使用者輸入一個長度為6的字串，將此字串分別置於10個欄位的寬度的左邊、中間和右邊，並顯示這三個結果，左右皆以直線 |（Vertical bar）作為邊界。
 ![](https://i.imgur.com/0waajN7.png)
-```python=
+```python
 n=input()
 print('|{:<10s}|'.format(n))
 print("|%s|"%n.center(10))
@@ -1364,12 +1364,12 @@ print('|{:>10s}|'.format(n))
 請撰寫一程式，讓使用者輸入一字串和一字元，並將此字串及字元作為參數傳遞給名為compute()的函式，此函式將回傳該字串中指定字元出現的次數，接著再輸出結果。
 ![](https://i.imgur.com/buqcExa.png)
 ### 解法(1
-```python=
+```python
 def compute(Str, s):  print(f'{s} occurs {Str.count(s)} time(s)')
 compute(input(),input())
 ```
 ### 解法(2
-```python=
+```python
 def compute(Str, s):
     return Str.count(s)
 Str = input()
@@ -1377,7 +1377,7 @@ s = input()
 print(f'{s} occurs {compute(Str, s)} time(s)')
 ```
 ### 解法(3
-```python=
+```python
 #不用函式的寫法
 def compute(n,m) :
   ans=0 
@@ -1390,7 +1390,7 @@ compute(input(),input())
 2. 設計說明：
 請撰寫一程式，要求使用者輸入一字串，該字串為五個數字，以空白隔開。請將此五個數字加總（Total）並計算平均（Average）。
 ![](https://i.imgur.com/K4etyUx.png)
-```python=
+```python
 m=list(map(int,input().split()))
 j=sum=0
 for i in m:
@@ -1403,7 +1403,7 @@ print(f'Average = {sum/j}')
 2. 設計說明：
 請撰寫一程式，提示使用者輸入一個社會安全碼SSN，格式為ddd-dd-dddd，d表示數字。若格式完全符合（正確的SSN）則顯示【Valid SSN】，否則顯示【Invalid SSN】
 ![](https://i.imgur.com/eooxlKY.png)
-```python=
+```python
 num=input().replace("-","")
 if(num.isdigit()):  print('Valid SSN')  
 else:               print('Invalid SSN')
@@ -1416,7 +1416,7 @@ else:               print('Invalid SSN')
 　c. 至少要有一個大寫英文字母。
 　d. 若符合上述三項規則，程式將顯示檢查結果為【Valid password】，否則顯示【Invalid password】。
  ![](https://i.imgur.com/qN3UTMg.png)
-```python=
+```python
 n = input()
 b=0
 for i in range(len(n)):
@@ -1430,7 +1430,7 @@ else:   print("Invalid password")
 
 提示：差值輸出到小數點後第二位。
 ![](https://i.imgur.com/bGDkwHp.png)
-```python=
+```python
 for i in range(int(input())):
    data=list(map(float,input().split()))
    print('{:.2f}'.format( max( data ) - min( data )))
@@ -1441,7 +1441,7 @@ for i in range(int(input())):
 2. 設計說明：
 請撰寫一程式，將使用者輸入的五筆資料寫入到write.txt（若不存在，則讓程式建立它），每一筆資料為一行，包含學生名字和期末總分，以空白隔開。檔案寫入完成後要關閉。
 ![](https://i.imgur.com/QYyrXqk.png)
-```python=
+```python
 n = open('write.txt','w')
 for i in range(5):
     n.write(input()+'\n')
@@ -1452,7 +1452,7 @@ n.close()
 2. 設計說明：
 請撰寫一程式，讀取read.txt的內容（內容為數字，以空白分隔）並將這些數字加總後輸出。檔案讀取完成後要關閉。
 ![](https://i.imgur.com/2GVd4Y0.png)
-```python=
+```python
 f=open("read.txt")
 w=f.read()
 sp=w.split(" ")
@@ -1465,7 +1465,7 @@ print(total)
 2. 設計說明：
 請撰寫一程式，要求使用者輸入五個人的名字並加入到data.txt的尾端。之後再顯示此檔案的內容。
 ![](https://i.imgur.com/PwgHiiQ.png)
-```python=
+```python
 with open("data.txt","a+",encoding="utf-8") as file:
     for i in range(5):
         file.write("\n"+input())
@@ -1481,7 +1481,7 @@ with open("data.txt","a+",encoding="utf-8") as file:
 
 提示：輸出浮點數到小數點後第二位。
 ![](https://i.imgur.com/IpWAZLx.png)
-```python=
+```python
 height=[]
 weight=[]
 
@@ -1518,7 +1518,7 @@ print("The heaviest is {} with {:.2f}kg".format(wname,maxw))
 2. 設計說明：
 請撰寫一程式，要求使用者輸入檔案名稱data.txt和一字串s，顯示該檔案的內容。接著刪除檔案中的字串s，顯示刪除後的檔案內容並存檔。
 ![](https://i.imgur.com/FxL51Kl.png)
-```python=
+```python
 f=input()
 s=input()
 with open(f,"r+",encoding="utf-8")as file:
@@ -1535,7 +1535,7 @@ with open(f,"r+",encoding="utf-8")as file:
 2. 設計說明：
 請撰寫一程式，要求使用者輸入檔名data.txt、字串s1和字串s2。程式將檔案中的字串s1以s2取代之。
 ![](https://i.imgur.com/5M9ytbZ.png)
-```python=
+```python
 fn,s1,s2=input(),input(),input()
 f=open(fn,'r')
 w=f.read()
@@ -1549,7 +1549,7 @@ print(w)
 2. 設計說明：
 請撰寫一程式，要求使用者輸入檔名read.txt，顯示該檔案的行數、單字數（簡單起見，單字以空白隔開即可，忽略其它標點符號）以及字元數（不含空白）。
 ![](https://i.imgur.com/ACHMcMR.png)
-```python=
+```python
 f_name = input()
 f_line = f_word = f_char = 0
 
@@ -1567,7 +1567,7 @@ print('%d character(s)' %f_char)
 2. 設計說明：
 請撰寫一程式，要求使用者輸入檔名read.txt，以及檔案中某單字出現的次數。輸出符合次數的單字，並依單字的第一個字母大小排序。（單字的判斷以空白隔開即可）
 ![](https://i.imgur.com/ON7rGu7.png)
-```python=
+```python
 fn,num=input(),eval(input())
 f=open(fn,'r')
 w=f.read()
@@ -1581,7 +1581,7 @@ for i in setsp1:
 2. 設計說明：
 請撰寫一程式，將使用者輸入的五個人的資料寫入data.dat檔，每一個人的資料為姓名和電話號碼，以空白分隔。再將檔案加以讀取並顯示檔案內容。
 ![](https://i.imgur.com/0mOPgmD.png)
-```python=
+```python
 with open("data.dat","w",encoding="UTF-8") as fp:
   for i in range(5):
       fp.write(input()+"\n")
@@ -1595,7 +1595,7 @@ with open("data.dat","r",encoding="UTF-8") as fp:
 2. 設計說明：
 請撰寫一程式，要求使用者讀入read.dat（以UTF-8編碼格式讀取），第一列為欄位名稱，第二列之後是個人記錄。請輸出檔案內容並顯示男生人數和女生人數（根據"性別"欄位，0為女性、1為男性）。
 ![](https://i.imgur.com/igVg9hc.png)
-```python=
+```python
 M=0
 F=0
 f=open('read.dat','r')
