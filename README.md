@@ -71,6 +71,9 @@ print('Area = %.2f'%(w*h))
 
 ## Python 106 公里英哩換算
 ![](https://i.imgur.com/4gEStEQ.png)
+
+<img width="877" height="249" alt="image" src="https://github.com/user-attachments/assets/5bd5bde4-285e-4760-bd33-cec70fc5f89e" />
+
 ```python
 x=float(input())
 y=float(input())
