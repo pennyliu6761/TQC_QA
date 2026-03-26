@@ -541,6 +541,7 @@ while True :
 |18.5 <= BMI < 25|	normal|
 |25.0 <= BMI < 30|	over weight|
 |30 <= BMI|	fat|
+
 提示： $BMI = 體重(kg)/身高^2(m)$，輸出浮點數到小數點後第二位。 不需考慮男性或女性標準。
 
 ![](https://i.imgur.com/2cgAcvW.png)
@@ -623,7 +624,9 @@ for i in range(n, 0, -1):
 ## Python 501 訊息顯示
 設計說明：
 請撰寫一程式，呼叫函式compute()，該函式功能為讓使用者輸入系別（Department）、學號（Student ID）和姓名（Name）並顯示這些訊息。
+
 ![](https://i.imgur.com/6rTdqdI.png)
+
 ```python
 def compute():
     department = input()
