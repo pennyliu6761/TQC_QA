@@ -1,7 +1,5 @@
-# TQC+ 程式語言Python 解答(全)101~910 最佳解!!!
-**全部的程式碼，皆通過CODE JUDGER測試**![](https://i.imgur.com/zpfctrV.png)
-###### tags: `school`
-![](https://i.gifer.com/5RR.gif)
+# TQC+ 程式語言Python !!!
+
 # Python 第1類：基本程式設計
 ## Python 101 整數格式化輸出
 ![](https://i.imgur.com/E5v7Tkh.png)
