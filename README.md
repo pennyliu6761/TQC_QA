@@ -935,7 +935,9 @@ print("%.2f"%(s/(10-2)))
 接著以該串列作為參數呼叫函式compute()輸出串列。
 
 提示：欄寬為4。
+
 ![](https://i.imgur.com/nRKAiV9.png)
+
 ```python
 def compute(r,c):
     for i in range(r):
@@ -950,8 +952,10 @@ compute(r,c)
 設計說明：
 請撰寫一程式，讓使用者輸入三位學生各五筆成績，接著再計算並輸出每位學生的總分及平均分數。
 
-提示：平均分數輸出到小數點後第二位
+提示：平均分數輸出到小數點後第二位。
+
 ![](https://i.imgur.com/S4PbmSg.png)
+
 ```python
 n=["1st","2nd","3rd"]
 t=[[0 for j in range(5)] for i in range(3)]
@@ -1066,7 +1070,9 @@ print('Sum:',sum(TUPLE))
 ## Python 702 數組合併排序
 設計說明：
 請撰寫一程式，輸入並建立兩組數組，各以-9999為結束點（數組中不包含-9999）。將此兩數組合併並從小到大排序之，顯示排序前的數組和排序後的串列
+
 ![](https://i.imgur.com/L1OO3jD.png)
+
 ### 解法(1)
 ```python
 tuple1 = ()
