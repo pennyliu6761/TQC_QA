@@ -335,7 +335,7 @@ print(sum)
 請撰寫一程式，讓使用者輸入一個正整數，將此數值以反轉的順序輸出。
 ![](https://i.imgur.com/FTFy6VI.png)
 
-**解法(1**
+**解法(1)**
 ```python
 a=int(input())
 if(a==0):
@@ -344,7 +344,7 @@ while (a!=0) :
     print(int(a%10),end="")
     a=a//10
 ```
-**解法(2**
+**解法(2)**
 ```python
 a=str(input())
 reversed_string=''.join(reversed(a))
@@ -507,12 +507,14 @@ print(s)
 設計說明：
 請撰寫一程式，以不定數迴圈的方式輸入一個正整數（代表分數），之後根據以下分數與GPA的對照表，印出其所對應的GPA。假設此不定數迴圈輸入-9999則會結束此迴圈。標準如下表所示：
 
-分　數	GPA
-90 ~ 100	A
-80 ~ 89	B
-70 ~ 79	C
-60 ~ 69	D
-0 ~ 59	E
+|分數|GPA|
+|---|---|
+|90 ~ 100|A|
+|80 ~ 89|B|
+|70 ~ 79|C|
+|60 ~ 69|D|
+|0 ~ 59|E|
+
 ![](https://i.imgur.com/j8bGTWB.png)
 ```python
 while True : 
@@ -533,12 +535,14 @@ while True :
 設計說明：
 請撰寫一程式，以不定數迴圈的方式輸入身高與體重，計算出BMI之後再根據以下對照表，印出BMI及相對應的BMI代表意義（State）。假設此不定數迴圈輸入-9999則會結束此迴圈。標準如下表所示：
 
-BMI值	代表意義
-BMI < 18.5	under weight
-18.5 <= BMI < 25	normal
-25.0 <= BMI < 30	over weight
-30 <= BMI	fat
-提示：$BMI = 體重(kg)/身高^2(m)$，輸出浮點數到小數點後第二位。 不需考慮男性或女性標準。
+|BMI值|	代表意義|
+|---|---|
+|BMI < 18.5|	under weight|
+|18.5 <= BMI < 25|	normal|
+|25.0 <= BMI < 30|	over weight|
+|30 <= BMI|	fat|
+提示： $BMI = 體重(kg)/身高^2(m)$，輸出浮點數到小數點後第二位。 不需考慮男性或女性標準。
+
 ![](https://i.imgur.com/2cgAcvW.png)
 ```python
 while True:
@@ -635,13 +639,13 @@ compute()
 請撰寫一程式，將使用者輸入的兩個整數作為參數傳遞給一個名為compute(x, y)的函式，此函式將回傳x和y的乘積。
 ![](https://i.imgur.com/DtPDrYZ.png)
 
-### 解法(1
+### 解法(1)
 ```python
 def compute(x,y):
   print(x*y)
 compute(int(input()),int(input()))
 ```
-### 解法(2
+### 解法(2)
 ```python
 def compute(x,y):
     return x*y
@@ -666,15 +670,15 @@ print(compute(x,y))
 ```
 ## Python 504 次方計算
 設計說明：
-請撰寫一程式，讓使用者輸入兩個整數，接著呼叫函式compute()，此函式接收兩個參數a、b，並回傳$a^b$的值。
+請撰寫一程式，讓使用者輸入兩個整數，接著呼叫函式compute()，此函式接收兩個參數a、b，並回傳 $a^b$ 的值。
 ![](https://i.imgur.com/9A4QsOh.png)
-### 解法(1
+### 解法(1)
 ```python
 def compute(x,y):
   print(x**y)
 compute(int(input()),int(input()))
 ```
-### 解法(2
+### 解法(2)
 ```python
 def compute(a,b):
     return pow(a,b)
@@ -708,7 +712,7 @@ compute(a,x,y)
 輸出有順序性
 回傳方程式的解，無須考慮小數點位數
 ![](https://i.imgur.com/HDSR1n3.png)
-### 解法(1
+### 解法(1)
 ```python
 def compute(a,b,c):
    temp=b**2-4*a*c
@@ -720,7 +724,7 @@ def compute(a,b,c):
      print('%.1f, %.1f'%((-b+temp**0.5)/(2*a),(-b-temp**0.5)/(2*a)))
 compute(int(input()),int(input()),int(input()))
 ```
-### 解法(2
+### 解法(2)
 ```python
 def compute(a,b,c):
     q=b**2-4*a*c
@@ -760,7 +764,7 @@ else:
 設計說明：
 請撰寫一程式，讓使用者輸入兩個正整數x、y，並將x與y傳遞給名為compute()的函式，此函式回傳x和y的最大公因數。
 ![](https://i.imgur.com/uPuMfVr.png)
-### 解法(1
+### 解法(1)
 ```python
 import math 
 def compute(x,y):
@@ -768,7 +772,7 @@ def compute(x,y):
 x,y=eval(input())
 print(compute(x,y))
 ```
-### 解法(2
+### 解法(2)
 ```python
 def compute(x,y):
     while(y!=0):
@@ -800,9 +804,11 @@ print(f'{x}/{y} + {m}/{n} = {int(p/gcd)}/{int(q/gcd)}')
 請撰寫一程式，計算費氏數列（Fibonacci numbers），使用者輸入一正整數num (num>=2)，並將它傳遞給名為compute()的函式，此函式將輸出費氏數列前num個的數值。
 
 提示：費氏數列的某一項數字是其前兩項的和，而且第0項為0，第一項為1，表示方式如下：
-$$F_0 = 0 $$ $$F_1 = 1 $$ $$F_n = F_{n-1} + F_{n-2} $$
+
+$$F_0 = 0$$ $$F_1 = 1$$ $$F_n = F_{n-1} + F_{n-2}$$
+
 ![](https://i.imgur.com/osDAZ4N.png)
-### 解法(1
+### 解法(1)
 ```python
 def compute(n):                        
     if n > 1:                      
@@ -812,7 +818,7 @@ n=int(input())
 for i in range(n):                 
     print(compute(i), end = ' ')   
 ```
-### 解法(2
+### 解法(2)
 ```python
 def compute(n): 
     curr = 1
@@ -884,7 +890,7 @@ print(m[9],m[8],m[7])
 
 提示：假設樣本中只有一個眾數。
 ![](https://i.imgur.com/PUMSTBA.png)
-### 解法(1
+### 解法(1)
 ```python
 m=[0]*100
 for i in range(10):
@@ -893,7 +899,7 @@ for i in range(10):
 print(m.index(max(m)))  #取得位址
 print(max(m))
 ```
-### 解法(2
+### 解法(2)
 ```python
 m=[0]*100
 for i in range(10):
@@ -960,7 +966,7 @@ for i in range(3):
 設計說明：
 請撰寫一程式，讓使用者建立一個3*3的矩陣，其內容為從鍵盤輸入的整數（不重複），接著輸出矩陣最大值與最小值的索引。
 ![](https://i.imgur.com/wyocxkC.png)
-### 解法(1
+### 解法(1)
 ```python
 n=[]
 for i in range(9):   n.append(int(input()))
@@ -971,7 +977,7 @@ s=min(n)
 si=n.index(s)
 print("Index of the smallest number {} is: ({}, {})".format(s,si//3,si%3))
 ```
-### 解法(2
+### 解法(2)
 ```python
 a=[]
 for i in range(9):
@@ -1058,7 +1064,7 @@ print('Sum:',sum(TUPLE))
 設計說明：
 請撰寫一程式，輸入並建立兩組數組，各以-9999為結束點（數組中不包含-9999）。將此兩數組合併並從小到大排序之，顯示排序前的數組和排序後的串列
 ![](https://i.imgur.com/L1OO3jD.png)
-### 解法(1
+### 解法(1)
 ```python
 tuple1 = ()
 num = eval(input('Create tuple1:\n'))
@@ -1076,7 +1082,7 @@ LIST = list(tuple1)
 LIST.sort()
 print('Combined list after sorting:',LIST)
 ```
-### 解法(2
+### 解法(2)
 ```python
 t1=()
 print('Create tuple1:')
@@ -1114,7 +1120,7 @@ print(TUPLE[-3:])
 設計說明：
 請撰寫一程式，輸入數個整數並儲存至集合，以輸入-9999為結束點（集合中不包含-9999），最後顯示該集合的長度（Length）、最大值（Max）、最小值（Min）、總和（Sum）。
 ![](https://i.imgur.com/Z3gs4it.png)
-### 解法(1
+### 解法(1)
 ```python
 set1 = set()
 num = eval(input())
@@ -1126,7 +1132,7 @@ print('Max:',max(set1))
 print('Min:',min(set1))
 print('Sum:',sum(set1))
 ```
-### 解法(2
+### 解法(2)
 ```python
 s1=set()
 while True : 
@@ -1168,7 +1174,7 @@ print('set3 is superset of set1:',str(set3.issuperset(set1)))
 
 提示：不區分大小寫字母
 ![](https://i.imgur.com/G6cKzQm.png)
-### 解法(1
+### 解法(1)
 ```python
 count= eval(input())
 
@@ -1184,7 +1190,7 @@ for i in range(count):
  else:
      print('False')
 ```
-### 解法(2
+### 解法(2)
 ```python
 n=int(input())
 for i in range(n):
@@ -1230,7 +1236,7 @@ print(sorted(yS.symmetric_difference(xS)))
 設計說明：
 請撰寫一程式，自行輸入兩個詞典（以輸入鍵值"end"作為輸入結束點，詞典中將不包含鍵值"end"），將此兩詞典合併，並根據key值字母由小到大排序輸出，如有重複key值，後輸入的key值將覆蓋前一key值。
 ![](https://i.imgur.com/zji2PJk.png)
-### 解法(1
+### 解法(1)
 ```python
 x={}
 y={}
@@ -1250,7 +1256,7 @@ x.update(y)
 for i in sorted(x.keys()):
     print(i+": "+x[i])
 ```
-### 解法(2
+### 解法(2)
 ```python
 dc={}  #其實好像建一個dict就可以了
 print('Create dict1:')
@@ -1329,13 +1335,13 @@ print(my_list[-3],my_list[-2],my_list[-1])
 請撰寫一程式，讓使用者輸入一字串，分別將該字串轉換成全部大寫以及每個字的第一個字母大寫。
 
 ![](https://i.imgur.com/TvxWDHC.png)
-### 解法(1
+### 解法(1)
 ```python
 n=input()
 print(n.upper())
 print(n.title())
 ```
-### 解法(2
+### 解法(2)
 ```python
 #不用函式的寫法，我就閒 2022/6/16
 n=input()
@@ -1371,12 +1377,12 @@ print('|{:>10s}|'.format(n))
 設計說明：
 請撰寫一程式，讓使用者輸入一字串和一字元，並將此字串及字元作為參數傳遞給名為compute()的函式，此函式將回傳該字串中指定字元出現的次數，接著再輸出結果。
 ![](https://i.imgur.com/buqcExa.png)
-### 解法(1
+### 解法(1)
 ```python
 def compute(Str, s):  print(f'{s} occurs {Str.count(s)} time(s)')
 compute(input(),input())
 ```
-### 解法(2
+### 解法(2)
 ```python
 def compute(Str, s):
     return Str.count(s)
