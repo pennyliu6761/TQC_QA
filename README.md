@@ -16,9 +16,10 @@ print('|{:>5s} {:>5s}|'.format(c,d))
 print('|{:<5s} {:<5s}|'.format(a,b))
 print('|{:<5s} {:<5s}|'.format(c,d))
 ```
+
 ##  Python 102 浮點數格式化輸出
 請撰寫一程式，輸入四個分別含有小數1到4位的浮點數，然後將這四個浮點數以欄寬為7、欄與欄間隔一個空白字元、每列印兩個的方式，先列印向右靠齊，再列印向左靠齊，左右皆以直線 |（Vertical bar）作為邊界。
-> 提示：輸出浮點數到小數點後第二位。
+> - 提示：輸出浮點數到小數點後第二位。
 
 ![](https://i.imgur.com/gBlgFuu.png)
 
@@ -27,13 +28,12 @@ a=float(input())
 b=float(input())
 c=float(input())
 d=float(input())
-
 print("|%7.2f %7.2f|"%(a,b))
 print("|%7.2f %7.2f|"%(c,d))
 print("|{:<7.2f} {:<7.2f}|".format(a,b))
 print("|{:<7.2f} {:<7.2f}|".format(c,d))
-
 ```
+
 ## Python 103 字串格式化輸出
 請撰寫一程式，輸入四個單字，然後將這四個單字以欄寬為10、欄與欄間隔一個空白字元、每列印兩個的方式，先列印向右靠齊，再列印向左靠齊，左右皆以直線 |（Vertical bar）作為邊界。
 
@@ -48,19 +48,18 @@ print('|{:>10s} {:>10s}|'.format(a,b))
 print('|{:>10s} {:>10s}|'.format(c,d))
 print('|{:<10s} {:<10s}|'.format(a,b))
 print('|{:<10s} {:<10s}|'.format(c,d))
-
-
 ```
+
 ## Python 104 圓形面積計算
 請撰寫一程式，輸入一圓的半徑，並加以計算此圓之面積和周長，最後請印出此圓的半徑（Radius）、周長（Perimeter）和面積（Area）。
-> 提示1：需import  math模組，並使用math.pi。
-> 提示2：輸出浮點數到小數點後第二位。
+> [!TIP]
+> - 提示1：需import  math模組，並使用math.pi。
+> - 提示2：輸出浮點數到小數點後第二位。
 
 ![](https://i.imgur.com/nVQFNqI.png)
 
 ```python
 import math
-
 r=eval(input(""))
 print("Radius = %.2f"%r)
 print("Perimeter = %.2f"%(r*2*math.pi))
@@ -69,7 +68,8 @@ print("Area = %.2f"%(r*r*math.pi))
 
 ## Python 105 矩形面積計算
 請撰寫一程式，輸入兩個正數，代表一矩形之寬和高，計算並輸出此矩形之高（Height）、寬（Width）、周長（Perimeter）及面積（Area）。
-> 提示：輸出浮點數到小數點後第二位。
+> [!TIP]
+> - 提示：輸出浮點數到小數點後第二位。
 
 ![](https://i.imgur.com/LTPCKDz.png)
 
@@ -84,7 +84,8 @@ print('Area = %.2f'%(w*h))
 
 ## Python 106 公里英哩換算
 假設一賽跑選手在x分y秒的時間跑完z公里，請撰寫一程式，輸入x、y、z數值，最後顯示此選手每小時的平均英哩速度（1英哩等於1.6公里）。
-> 提示：輸出浮點數到小數點後第一位。
+> [!TIP]
+> - 提示：輸出浮點數到小數點後第一位。
 
 <img width="877" height="249" alt="image" src="https://github.com/user-attachments/assets/5bd5bde4-285e-4760-bd33-cec70fc5f89e" />
 
@@ -95,9 +96,11 @@ z=float(input())
 s = (z/1.6)/((60*x+y)/(60*60))
 print("Speed = %.1f"%(s))
 ```
+
 ## Python 107 數值計算
 請撰寫一程式，讓使用者輸入五個數字，計算並輸出這五個數字之數值、總和及平均數。
-> 提示：總和與平均數皆輸出到小數點後第1位。
+> [!TIP]
+> - 提示：總和與平均數皆輸出到小數點後第1位。
 
 <img width="883" height="322" alt="image" src="https://github.com/user-attachments/assets/dc34ec19-ed16-4662-b949-748786d20def" />
 
@@ -115,8 +118,9 @@ print('Average = %.1f'%(sum(l)/len(l)))
 
 ## Python 108 座標距離計算
 請撰寫一程式，讓使用者輸入四個數字x1、y1、x2、y2，分別代表兩個點的座標(x1, y1)、(x2, y2)。計算並輸出這兩點的座標與其歐式距離。
-> 提示1： $歐式距離 = \sqrt{((x1-x2)^2+(y1-y2)^2)}$
-> 提示2：兩座標的歐式距離，輸出到小數點後第4位
+> [!TIP]
+> - 提示1： $歐式距離 = \sqrt{((x1-x2)^2+(y1-y2)^2)}$
+> - 提示2：兩座標的歐式距離，輸出到小數點後第4位
 
 <img width="887" height="306" alt="image" src="https://github.com/user-attachments/assets/a4586ebe-0900-45b5-9c26-0b1114c1f4d3" />
 
@@ -132,9 +136,10 @@ print('Distance = %.4f'% ((x1-x2)**2+(y1-y2)**2)**0.5)
 
 ## Python 109 正五邊形面積計算
 請撰寫一程式，讓使用者輸入一個正數s，代表正五邊形之邊長，計算並輸出此正五邊形之面積（Area）。
-> 提示1：建議使用import math模組的math.pow及math.tan
-> 提示2：正五邊形面積的公式： $Area=(5 * s^2)/(4 * tan(pi/5))$
-> 提示3：輸出浮點數到小數點後第四位。
+> [!TIP]
+> - 提示1：建議使用import math模組的math.pow及math.tan
+> - 提示2：正五邊形面積的公式： $Area=(5 * s^2)/(4 * tan(pi/5))$
+> - 提示3：輸出浮點數到小數點後第四位。
 
 <img width="873" height="206" alt="image" src="https://github.com/user-attachments/assets/76388d95-70f5-479b-8fdf-4e2f39564b67" />
 
@@ -143,11 +148,13 @@ import math
 s=eval(input())
 print('Area = %.4f'%((5*s**2)/(4*math.tan(math.pi/5))))
 ```
+
 ## Python 110 正n邊形面積計算
 請撰寫一程式，讓使用者輸入兩個正數n、s，代表正n邊形之邊長為s，計算並輸出此正n邊形之面積（Area）。
-> 提示1：建議使用import math模組的math.pow及math.tan
-> 提示2：正n邊形面積的公式如下： $Area = (n * s^2) / (4 * tan(pi/n))$
-> 提示3：輸出浮點數到小數點後第四位
+> [!TIP]
+> - 提示1：建議使用import math模組的math.pow及math.tan
+> - 提示2：正n邊形面積的公式如下： $Area = (n * s^2) / (4 * tan(pi/n))$
+> - 提示3：輸出浮點數到小數點後第四位
 
 <img width="868" height="228" alt="image" src="https://github.com/user-attachments/assets/b968deb4-c24d-433d-9ab0-c81809fb880b" />
 
@@ -158,9 +165,11 @@ s=eval(input())
 print('Area = %.4f'%((n*s**2)/(4*math.tan(math.pi/n))))
 ```
 ---
+
 # Python 第2類：選擇敘述
 ## Python 201 偶數判斷
 請使用選擇敘述撰寫一程式，讓使用者輸入一個正整數，然後判斷它是否為偶數（even）。
+
 ![](https://i.imgur.com/I6rcTPP.png)
 
 ```python
@@ -168,6 +177,7 @@ n=int(input())
 if(n%2==0): print(f'{n} is an even number.')
 else :  print(f'{n} is not an even number.')
 ```
+
 ## Python 202 倍數判斷
 請使用選擇敘述撰寫一程式，讓使用者輸入一個正整數，然後判斷它是3或5的倍數，顯示【x is a multiple of 3.】或【x is a multiple of 5.】；若此數值同時為3與5的倍數，顯示【x is a multiple of 3 and 5.】；如此數值皆不屬於3或5的倍數，顯示【x is not a multiple of 3 or 5.】，將使用者輸入的數值代入x。
 
@@ -180,6 +190,7 @@ elif(x%3!=0 and x%5==0): print(f'{x} is a multiple of 5.')
 elif(x%3==0 and x%5==0): print(f'{x} is a multiple of 3 and 5.')
 else : print(f'{x} is not a multiple of 3 or 5.')
 ```
+
 ## Python 203 閏年判斷
 請使用選擇敘述撰寫一程式，讓使用者輸入一個西元年份，然後判斷它是否為閏年（leap year）或平年。其判斷規則為：每四年一閏，每百年不閏，但每四百年也一閏。
 
@@ -190,6 +201,7 @@ n=int(input())
 if(n%4==0 and (n%400==0 or n%100!=0)): print(f'{n} is a leap year.')
 else : print(f'{n} is not a leap year.')
 ```
+
 ## Python 204 算術運算
 請使用選擇敘述撰寫一程式，讓使用者輸入兩個整數a、b，然後再輸入一算術運算子 (+、-、*、/、//、%），輸出經過運算後的結果。
 
@@ -206,6 +218,7 @@ elif(c=='/'): print(a/b)
 elif(c=='//'): print(a//b)
 elif(c=='%'): print(a%b)
 ```
+
 ## Python 205 字元判斷
 請使用選擇敘述撰寫一程式，讓使用者輸入一個字元，判斷它是包括大、小寫的英文字母（alphabet）、數字（number）、或者其它字元（symbol）。例如：a為英文字母、9為數字、$為其它字元。
 
@@ -237,6 +250,7 @@ elif(n>=70 and n<80) : print('B')
 elif(n>=60 and n<70) : print('C')
 else : print('F')
 ```
+
 ## Python 207 折扣方案
 請使用選擇敘述撰寫一程式，要求使用者輸入購物金額，購物金額需大於8,000（含）以上，並顯示折扣優惠後的實付金額。購物金額折扣方案如下表所示：
 
@@ -254,9 +268,11 @@ elif(n>=18000 and n<28000): print(n*0.9)
 elif(n>=28000 and n<38000): print(n*0.8)
 elif(n>=38000): print(n*0.7)
 ```
+
 ## Python 208 十進位換算
 請使用選擇敘述撰寫一程式，讓使用者輸入一個十進位整數num(0 ≤ num ≤ 15)，將num轉換成十六進位值。
-> 提示：轉換規則=十進位0-9的十六進位值為其本身，十進位10-15的十六進位值為A-F。
+> [!TIP]
+> - 提示：轉換規則=十進位0-9的十六進位值為其本身，十進位10-15的十六進位值為A-F。
 
 ![](https://i.imgur.com/So8krVa.png)
 
@@ -270,9 +286,11 @@ elif (n==13) : print('D')
 elif (n==14) : print('E')
 elif (n==15) : print('F')
 ```
+
 ## Python 209 距離判斷
 請使用選擇敘述撰寫一程式，讓使用者輸入一個點的平面座標x和y值，判斷此點是否與點(5, 6)的距離小於或等於15，如距離小於或等於15顯示【Inside】，反之顯示【Outside】。
-> 提示：計算平面上兩點距離的公式： $\sqrt{(x1-x2)^2 + (y1-y2)^2}\quad$
+> [!TIP]
+> - 提示：計算平面上兩點距離的公式： $\sqrt{(x1-x2)^2 + (y1-y2)^2}\quad$
 
 ![](https://i.imgur.com/vupvPIn.png)
 
@@ -283,9 +301,11 @@ d = ((x-5)**2+(y-6)**2)**0.5
 if d <= 15: print('Inside')
 else: print('Outside')
 ```
+
 ## Python 210 三角形判斷
 請使用選擇敘述撰寫一程式，讓使用者輸入三個邊長，檢查這三個邊長是否可以組成一個三角形。若可以，則輸出該三角形之周長；否則顯示【Invalid】。
-> 提示：檢查方法 = 任意兩個邊長之總和大於第三邊長
+> [!TIP]
+> - 提示：檢查方法 = 任意兩個邊長之總和大於第三邊長
 
 ![](https://i.imgur.com/Xw2VRLp.png)
 
@@ -297,6 +317,7 @@ if(a+b>c and a+c>b and a+b>c): print(a+b+c)
 else : print(Invalid)
 ```
 ---
+
 # Python 第3類：迴圈敘述
 ## Python 301 迴圈整數連加
 請使用迴圈敘述撰寫一程式，讓使用者輸入兩個正整數a、b（a < b），利用迴圈計算從a開始連加到b的總和。例如：輸入a=1、b=100，則輸出結果為5050（1 + 2 + … + 100 = 5050）。
@@ -311,6 +332,7 @@ for i in range (a,b+1):
     sum+=i
 print(sum)
 ```
+
 ## Python 302 迴圈偶數連加
 請使用迴圈敘述撰寫一程式，讓使用者輸入兩個正整數a、b（a < b），利用迴圈計算從a開始的偶數連加到b的總和。例如：輸入a=1、b=100，則輸出結果為2550（2 + 4 + … + 100 = 2550）。
 
@@ -325,9 +347,11 @@ for i in range (a,b+1):
     sum+=i
 print(sum)
 ```
+
 ## Python 303 迴圈數值相乘
 請使用迴圈敘述撰寫一程式，讓使用者輸入一個正整數（<100），然後以三角形的方式依序輸出此數的相乘結果。
-> 提示：輸出欄寬為4，且需靠右對齊。
+> [!TIP]
+> - 提示：輸出欄寬為4，且需靠右對齊。
 
 ![](https://i.imgur.com/1EqWR6p.png)
 
@@ -340,6 +364,7 @@ for i in range(1,a+1):
         print("%4d"%(c),end='')
     print()
 ```
+
 ## Python 304 迴圈倍數總和
 請使用迴圈敘述撰寫一程式，讓使用者輸入一個正整數a，利用迴圈計算從1到a之間，所有5之倍數數字總和。
 
@@ -353,6 +378,7 @@ for i in range(1,n+1):
         sum+=i
 print(sum)
 ```
+
 ## Python 305 數字反轉
 請撰寫一程式，讓使用者輸入一個正整數，將此數值以反轉的順序輸出。
 
@@ -373,6 +399,7 @@ a=str(input())
 reversed_string=''.join(reversed(a))
 print(reversed_string)
 ```
+
 ## Python 306 迴圈階乘計算
 請使用迴圈敘述撰寫一程式，讓使用者輸入一個正整數n，利用迴圈計算並輸出n!的值。
 
@@ -385,9 +412,10 @@ for i in range(1,n+1):
     sum*=i
 print(sum)
 ```
+
 ## Python 307 乘法表
-(1) 請使用迴圈敘述撰寫一程式，要求使用者輸入一個正整數n（n<10），顯示n*n乘法表。
-(2) 每項運算式需進行格式化排列整齊，每個運算子及運算元輸出的欄寬為2，而每項乘積輸出的欄寬為4，皆靠左對齊不跳行。
+1. 請使用迴圈敘述撰寫一程式，要求使用者輸入一個正整數n（n<10），顯示n*n乘法表。
+2. 每項運算式需進行格式化排列整齊，每個運算子及運算元輸出的欄寬為2，而每項乘積輸出的欄寬為4，皆靠左對齊不跳行。
 
 ![](https://i.imgur.com/PkSLngw.png)
 
@@ -398,6 +426,7 @@ for i in range(1,n+1):
         print('{} * {} = {:<4}'.format(j,i,(j*i)),end='')
     print()
 ```
+
 ## Python 308 迴圈位數加總
 請使用迴圈敘述撰寫一程式，要求使用者輸入一個數字，此數字代表後面測試資料的數量。每一筆測試資料是一個正整數（由使用者輸入），將此正整數的每位數全部加總起來。
 
@@ -434,8 +463,9 @@ for i in range(n):
 ```
 
 ## Python 309 存款總額
-請使用迴圈敘述撰寫一程式，> 提示使用者輸入金額（如10,000）、年收益率（如5.75），以及經過的月份數（如5），接著顯示每個月的存款總額。
-> 提示：四捨五入，輸出浮點數到小數點後第二位。
+請使用迴圈敘述撰寫一程式，> - 提示使用者輸入金額（如10,000）、年收益率（如5.75），以及經過的月份數（如5），接著顯示每個月的存款總額。
+> [!TIP]
+> - 提示：四捨五入，輸出浮點數到小數點後第二位。
 舉例：
 - 假設您存款$10,000，年收益為5.75%。
 - 過了一個月，存款會是：10000 + 10000 * 5.75 / 1200 = 10047.92
@@ -454,12 +484,14 @@ for i in range(1, m + 1):
     total += total * y / 1200    
     print('%3d \t %.2f' % (i, total))
 ```
+
 ## Python 310 迴圈公式計算
 請使用迴圈敘述撰寫一程式，讓使用者輸入正整數n (1 < n)，計算以下公式的總和並顯示結果：
 
 $$\frac{1}{1+\sqrt{2}} + \frac{1}{\sqrt{2}+\sqrt{3}} + \frac{1}{\sqrt{3}+\sqrt{4}} + ... + \frac{1}{\sqrt{n-1}+\sqrt{n}}$$
 
-> 提示：輸出結果至小數點後四位。
+> [!TIP]
+> - 提示：輸出結果至小數點後四位。
 
 ![](https://i.imgur.com/yIf2R5l.png)
 
@@ -574,7 +606,8 @@ while True :
 |25.0 <= BMI < 30|	over weight|
 |30 <= BMI|	fat|
 
-> 提示： $BMI = 體重(kg)/身高^2(m)$，輸出浮點數到小數點後第二位。 不需考慮男性或女性標準。
+> [!TIP]
+> - 提示： $BMI = 體重(kg)/身高^2(m)$，輸出浮點數到小數點後第二位。 不需考慮男性或女性標準。
 
 ![](https://i.imgur.com/2cgAcvW.png)
 
@@ -594,8 +627,8 @@ while True:
 ```
 
 ## Python 407 不定數迴圈-閏年判斷
-(1) 請撰寫一程式，以不定數迴圈的方式讓使用者輸入西元年份，然後判斷它是否為閏年（leap year）或平年。其判斷規則如下：每四年一閏，每百年不閏，但每四百年也一閏。
-(2) 假設此不定數迴圈輸入-9999則會結束此迴圈。
+1. 請撰寫一程式，以不定數迴圈的方式讓使用者輸入西元年份，然後判斷它是否為閏年（leap year）或平年。其判斷規則如下：每四年一閏，每百年不閏，但每四百年也一閏。
+2. 假設此不定數迴圈輸入-9999則會結束此迴圈。
 
 ![](https://i.imgur.com/eq4LHsb.png)
 
@@ -715,6 +748,7 @@ x = eval(input())
 y = eval(input())
 print(compute(x,y))
 ```
+
 ## Python 504 次方計算
 請撰寫一程式，讓使用者輸入兩個整數，接著呼叫函式compute()，此函式接收兩個參數a、b，並回傳 $a^b$ 的值。
 
@@ -734,9 +768,11 @@ x = eval(input())
 y = eval(input())
 print(compute(x,y))
 ```
+
 ## Python 505 依參數格式化輸出
 請撰寫一程式，將使用者輸入的三個參數，變數名稱分別為a（代表字元character）、x（代表個數）、y（代表列數），作為參數傳遞給一個名為compute()的函式，該函式功能為：一列印出x個a字元，總共印出y列。
-> 提示：輸出的每一個字元後方有一空格。
+> [!TIP]
+> - 提示：輸出的每一個字元後方有一空格。
 
 ![](https://i.imgur.com/nOcjTfI.png)
 
@@ -746,7 +782,6 @@ def compute(a,x,y):
         for j in range(x):
             print('%c '%a,end='')
         print()
-
 a = input()
 x = eval(input())
 y = eval(input())
@@ -755,9 +790,10 @@ compute(a,x,y)
 
 ## Python 506 一元二次方程式
 請撰寫一程式，將使用者輸入的三個整數（代表一元二次方程式 $ax^2 + bx + c = 0$ 的三個係數a、b、c）作為參數傳遞給一個名為compute()的函式，該函式回傳方程式的解，如無解則輸出【Your equation has no root.】
-> 提示：
-輸出有順序性
-回傳方程式的解，無須考慮小數點位數
+> [!TIP]
+> - 提示：
+> 輸出有順序性
+> 回傳方程式的解，無須考慮小數點位數
 
 ![](https://i.imgur.com/HDSR1n3.png)
 
@@ -857,7 +893,8 @@ print(f'{x}/{y} + {m}/{n} = {int(p/gcd)}/{int(q/gcd)}')
 
 ## Python 510 費氏數列
 請撰寫一程式，計算費氏數列（Fibonacci numbers），使用者輸入一正整數num (num>=2)，並將它傳遞給名為compute()的函式，此函式將輸出費氏數列前num個的數值。
-> 提示：費氏數列的某一項數字是其前兩項的和，而且第0項為0，第一項為1，表示方式如下：
+> [!TIP]
+> - 提示：費氏數列的某一項數字是其前兩項的和，而且第0項為0，第一項為1，表示方式如下：
 
 $$F_0 = 0$$ $$F_1 = 1$$ $$F_n = F_{n-1} + F_{n-2}$$
 
@@ -893,7 +930,8 @@ compute(num)
 # Python 第6類：串列(List)的運作(一維、二維以及多維)
 ## Python 601 偶數索引值加總
 請撰寫一程式，利用一維串列存放使用者輸入的12個正整數（範圍1~99）。顯示這些數字，接著將串列索引為偶數的數字相加並輸出結果。
-> 提示：輸出每一個數字欄寬設定為3，每3個一列，靠右對齊。
+> [!TIP]
+> - 提示：輸出每一個數字欄寬設定為3，每3個一列，靠右對齊。
 
 ![](https://i.imgur.com/T5tuEVn.png)
 
@@ -915,7 +953,8 @@ print(total)
 
 ## Python 602 撲克牌總和
 請撰寫一程式，讓使用者輸入52張牌中的5張，計算並輸出其總和。
-> 提示：J、Q、K以及A分別代表11、12、13以及1。
+> [!TIP]
+> - 提示：J、Q、K以及A分別代表11、12、13以及1。
 
 ![](https://i.imgur.com/Tvq8X4c.png)
 
@@ -947,7 +986,8 @@ print(m[9],m[8],m[7])
 
 ## Python 604 眾數
 請撰寫一程式，讓使用者輸入十個整數作為樣本數，輸出眾數（樣本中出現最多次的數字）及其出現的次數。
-> 提示：假設樣本中只有一個眾數。
+> [!TIP]
+> - 提示：假設樣本中只有一個眾數。
 
 ![](https://i.imgur.com/PUMSTBA.png)
 
@@ -974,7 +1014,8 @@ print(max(m))
 
 ## Python 605 成績計算
 請撰寫一程式，讓使用者輸入十個成績，接下來將十個成績中最小和最大值（最小、最大值不重複）以外的成績作加總及平均，並輸出結果。
-> 提示：平均值輸出到小數點後第二位。
+> [!TIP]
+> - 提示：平均值輸出到小數點後第二位。
 
 ![](https://i.imgur.com/GbiOkvH.png)
 
@@ -992,7 +1033,8 @@ print("%.2f"%(s/(10-2)))
 請撰寫一程式，讓使用者輸入兩個正整數rows、cols，分別表示二維串列lst 的「第一個維度大小」與「第二個維度大小」。
 串列元素[row][col]所儲存的數字，其規則為：row、col 的交點值 = 第二個維度的索引col – 第一個維度的索引row。
 接著以該串列作為參數呼叫函式compute()輸出串列。
-> 提示：欄寬為4。
+> [!TIP]
+> - 提示：欄寬為4。
 
 ![](https://i.imgur.com/nRKAiV9.png)
 
@@ -1009,7 +1051,8 @@ compute(r,c)
 
 ## Python 607 成績計算
 請撰寫一程式，讓使用者輸入三位學生各五筆成績，接著再計算並輸出每位學生的總分及平均分數。
-> 提示：平均分數輸出到小數點後第二位。
+> [!TIP]
+> - 提示：平均分數輸出到小數點後第二位。
 
 ![](https://i.imgur.com/S4PbmSg.png)
 
@@ -1092,8 +1135,9 @@ for i in range(2):
 
 ## Python 610 平均溫度
 請撰寫一程式，讓使用者輸入四週各三天的溫度，接著計算並輸出這四週的平均溫度及最高、最低溫度。
-> 提示1：平均溫度輸出到小數點後第二位。
-> 提示2：最高溫度及最低溫度的輸出，如為31時，則輸出31，如為31.1時，則輸出31.1。
+> [!TIP]
+> - 提示1：平均溫度輸出到小數點後第二位。
+> - 提示2：最高溫度及最低溫度的輸出，如為31時，則輸出31，如為31.1時，則輸出31.1。
 
 ![](https://i.imgur.com/Z8VoxTg.png)
 
@@ -1250,7 +1294,8 @@ print('set3 is superset of set1:',str(set3.issuperset(set1)))
 
 ## Python 706 全字母句
 全字母句（Pangram）是英文字母表所有的字母都出現至少一次（最好只出現一次）的句子。請撰寫一程式，要求使用者輸入一正整數k（代表有k筆測試資料），每一筆測試資料為一句子，程式判斷該句子是否為Pangram，並印出對應結果True（若是）或False（若不是）。
-> 提示：不區分大小寫字母
+> [!TIP]
+> - 提示：不區分大小寫字母
 
 ![](https://i.imgur.com/G6cKzQm.png)
 
@@ -1289,7 +1334,8 @@ for i in range(n):
 
 ## Python 707 共同科目
 請撰寫一程式，輸入X組和Y組各自的科目至集合中，以字串"end"作為結束點（集合中不包含字串"end"）。請依序分行顯示(1) X組和Y組的所有科目、(2)X組和Y組的共同科目、(3)Y組有但X組沒有的科目，以及(4) X組和Y組彼此沒有的科目（不包含相同科目）。
-> 提示：科目須參考範例輸出樣本，依字母由小至大進行排序。
+> [!TIP]
+> - 提示：科目須參考範例輸出樣本，依字母由小至大進行排序。
 
 ![](https://i.imgur.com/aU6nE2w.png)
 
@@ -1514,7 +1560,7 @@ print(f'Average = {sum/j}')
 ```
 
 ## Python 808 社會安全碼
-請撰寫一程式，> 提示使用者輸入一個社會安全碼SSN，格式為ddd-dd-dddd，d表示數字。若格式完全符合（正確的SSN）則顯示【Valid SSN】，否則顯示【Invalid SSN】
+請撰寫一程式，> - 提示使用者輸入一個社會安全碼SSN，格式為ddd-dd-dddd，d表示數字。若格式完全符合（正確的SSN）則顯示【Valid SSN】，否則顯示【Invalid SSN】
 
 ![](https://i.imgur.com/eooxlKY.png)
 
@@ -1526,10 +1572,10 @@ else:               print('Invalid SSN')
 
 ## Python 809 密碼規則
 請撰寫一程式，要求使用者輸入一個密碼（字串），檢查此密碼是否符合規則。密碼規則如下：
-　a. 必須至少八個字元。
-　b. 只包含英文字母和數字。
-　c. 至少要有一個大寫英文字母。
-　d. 若符合上述三項規則，程式將顯示檢查結果為【Valid password】，否則顯示【Invalid password】。
+a. 必須至少八個字元。
+b. 只包含英文字母和數字。
+c. 至少要有一個大寫英文字母。
+d. 若符合上述三項規則，程式將顯示檢查結果為【Valid password】，否則顯示【Invalid password】。
 
 ![](https://i.imgur.com/qN3UTMg.png)
 
@@ -1544,7 +1590,8 @@ else:   print("Invalid password")
 
 ## Python 810 最大值與最小值之差
 請撰寫一程式，首先要求使用者輸入正整數k（1 <= k <= 100），代表有k筆測試資料。每一筆測試資料是一串數字，每個數字之間以一空白區隔，請找出此串列數字中最大值和最小值之間的差。
-> 提示：差值輸出到小數點後第二位。
+> [!TIP]
+> - 提示：差值輸出到小數點後第二位。
 
 ![](https://i.imgur.com/bGDkwHp.png)
 
@@ -1601,7 +1648,8 @@ with open("data.txt","a+",encoding="utf-8") as file:
 
 ## Python 904 資料計算
 請撰寫一程式，讀取read.txt（每一列的格式為名字和身高、體重，以空白分隔）並顯示檔案內容、所有人的平均身高、平均體重以及最高者、最重者。
-> 提示：輸出浮點數到小數點後第二位。
+> [!TIP]
+> - 提示：輸出浮點數到小數點後第二位。
 
 ![](https://i.imgur.com/IpWAZLx.png)
 
