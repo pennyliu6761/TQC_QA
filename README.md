@@ -115,7 +115,7 @@ print('Average = %.1f'%(sum(l)/len(l)))
 
 ## Python 108 座標距離計算
 請撰寫一程式，讓使用者輸入四個數字x1、y1、x2、y2，分別代表兩個點的座標(x1, y1)、(x2, y2)。計算並輸出這兩點的座標與其歐式距離。
-> 提示1：$歐式距離 = \sqrt{((x1-x2)^2+(y1-y2)^2)}$
+> 提示1： $歐式距離 = \sqrt{((x1-x2)^2+(y1-y2)^2)}$
 > 提示2：兩座標的歐式距離，輸出到小數點後第4位
 
 <img width="887" height="306" alt="image" src="https://github.com/user-attachments/assets/a4586ebe-0900-45b5-9c26-0b1114c1f4d3" />
@@ -146,7 +146,7 @@ print('Area = %.4f'%((5*s**2)/(4*math.tan(math.pi/5))))
 ## Python 110 正n邊形面積計算
 請撰寫一程式，讓使用者輸入兩個正數n、s，代表正n邊形之邊長為s，計算並輸出此正n邊形之面積（Area）。
 > 提示1：建議使用import math模組的math.pow及math.tan
-> 提示2：正n邊形面積的公式如下：$Area = (n * s^2) / (4 * tan(pi/n))$
+> 提示2：正n邊形面積的公式如下： $Area = (n * s^2) / (4 * tan(pi/n))$
 > 提示3：輸出浮點數到小數點後第四位
 
 <img width="868" height="228" alt="image" src="https://github.com/user-attachments/assets/b968deb4-c24d-433d-9ab0-c81809fb880b" />
