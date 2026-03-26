@@ -1,9 +1,8 @@
-# TQC+ 程式語言Python !!!
+# TQC+ Python程式語言
 
 # Python 第1類：基本程式設計
 ## Python 101 整數格式化輸出
 ![](https://i.imgur.com/E5v7Tkh.png)
-
 
 ```python
 a=input()
@@ -121,7 +120,6 @@ print('Distance = %.4f'% ((x1-x2)**2+(y1-y2)**2)**0.5)
 import math
 s=eval(input())
 print('Area = %.4f'%((5*s**2)/(4*math.tan(math.pi/5))))
-
 ```
 ## Python 110 正n邊形面積計算
 設計說明：
@@ -167,7 +165,6 @@ else : print(f'{x} is not a multiple of 3 or 5.')
 n=int(input())
 if(n%4==0 and (n%400==0 or n%100!=0)): print(f'{n} is a leap year.')
 else : print(f'{n} is not a leap year.')
-
 ```
 ## Python 204 算術運算
 設計說明：
@@ -287,7 +284,7 @@ a=int(input())
 b=int(input())
 sum=0
 for i in range (a,b+1):
-   sum+=i
+    sum+=i
 print(sum)
 ```
 ## Python 302 迴圈偶數連加
@@ -299,8 +296,8 @@ a=int(input())
 b=int(input())
 sum=0
 for i in range (a,b+1):
-  if(i%2==0): 
-     sum+=i
+    if(i%2==0):
+    sum+=i
 print(sum)
 ```
 ## Python 303 迴圈數值相乘
@@ -313,10 +310,10 @@ print(sum)
 a=eval(input())
 c=0
 for i in range(1,a+1):
-  for j in range(1,i+1):
-    c=i*j
-    print("%4d"%(c),end='')
-  print()
+    for j in range(1,i+1):
+        c=i*j
+        print("%4d"%(c),end='')
+    print()
 ```
 ## Python 304 迴圈倍數總和
 設計說明：
@@ -326,8 +323,8 @@ for i in range(1,a+1):
 n=eval(input())
 sum=0
 for i in range(1,n+1):
-  if(i%5==0):
-    sum+=i
+    if(i%5==0):
+        sum+=i
 print(sum)
 ```
 ## Python 305 數字反轉
@@ -360,7 +357,6 @@ sum=1
 for i in range(1,n+1):
     sum*=i
 print(sum)
-
 ```
 ## Python 307 乘法表
 設計說明：
@@ -371,9 +367,9 @@ print(sum)
 ```python
 n=int(input())
 for i in range(1,n+1):
-  for j in range(1,n+1):
-    print('{} * {} = {:<4}'.format(j,i,(j*i)),end='')
-  print()
+    for j in range(1,n+1):
+        print('{} * {} = {:<4}'.format(j,i,(j*i)),end='')
+    print()
 ```
 ## Python 308 迴圈位數加總
 設計說明：
@@ -468,10 +464,10 @@ print(min(num))
 ```python
 n= []
 while True:
-        value = eval(input())
-        if value == 9999:
-            break
-        n.append(value)
+    value = eval(input())
+    if value == 9999:
+        break
+    n.append(value)
 print(min(n))
 ```
 ## Python 403 倍數總和計算
@@ -548,7 +544,8 @@ while True :
 ```python
 while True:
     H = float(input())
-    if H == -9999:   break
+    if H == -9999:
+        break
     else:
         W = float(input())
         BMI = W / (H/100)**2
@@ -566,11 +563,11 @@ while True:
 ```python
 year = eval(input())
 while year!=-9999:
-  if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+    if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
         print('%d is a leap year.'%year)   
-  else : 
+    else : 
         print('%d is not a leap year.'%year)
-  year = eval(input())
+    year = eval(input())
 ```
 ## Python 408 奇偶數個數計算
 設計說明：
@@ -578,7 +575,7 @@ while year!=-9999:
 ![](https://i.imgur.com/qWhBFjV.png)
 ```python
 even = odd = 0
-for _ in range(10):
+for i in range(10):
     if int(input()) % 2 == 0: even += 1
     else: odd += 1
 print(f'Even numbers: {even}')
@@ -645,7 +642,7 @@ compute()
 ### 解法(1)
 ```python
 def compute(x,y):
-  print(x*y)
+    print(x*y)
 compute(int(input()),int(input()))
 ```
 ### 解法(2)
@@ -678,7 +675,7 @@ print(compute(x,y))
 ### 解法(1)
 ```python
 def compute(x,y):
-  print(x**y)
+    print(x**y)
 compute(int(input()),int(input()))
 ```
 ### 解法(2)
@@ -718,13 +715,13 @@ compute(a,x,y)
 ### 解法(1)
 ```python
 def compute(a,b,c):
-   temp=b**2-4*a*c
-   if(temp<0): print('Your equation has no root.')
-   elif(temp==0) : 
-     ans=-b/2*a
-     print('%.1f'%ans)
-   elif(temp>0) :
-     print('%.1f, %.1f'%((-b+temp**0.5)/(2*a),(-b-temp**0.5)/(2*a)))
+    temp=b**2-4*a*c
+    if(temp<0): print('Your equation has no root.')
+    elif(temp==0) : 
+        ans=-b/2*a
+        print('%.1f'%ans)
+    elif(temp>0) :
+        print('%.1f, %.1f'%((-b+temp**0.5)/(2*a),(-b-temp**0.5)/(2*a)))
 compute(int(input()),int(input()),int(input()))
 ```
 ### 解法(2)
@@ -771,7 +768,7 @@ else:
 ```python
 import math 
 def compute(x,y):
-  return math.gcd(x,y)
+    return math.gcd(x,y)
 x,y=eval(input())
 print(compute(x,y))
 ```
@@ -779,9 +776,9 @@ print(compute(x,y))
 ```python
 def compute(x,y):
     while(y!=0):
-      temp=y
-      y=x%y
-      x=temp
+        temp=y
+        y=x%y
+        x=temp
     print(x)
 x,y=eval(input())
 compute(x,y)
@@ -847,15 +844,15 @@ compute(num)
 m={}
 total=c=0
 for i in range(0,12):
-   m[i]=int(input())
-   if(i%2==0):
-     total+=m[i]
+     m[i]=int(input())
+     if(i%2==0):
+         total+=m[i]
 for i in range(0,12):
-  print('{:>3d}'.format(m[i]),end="")
-  c+=1
-  if(c==3):
-     print()
-     c=0
+    print('{:>3d}'.format(m[i]),end="")
+    c+=1
+    if(c==3):
+        print()
+        c=0
 print(total)
 ```
 ## Python 602 撲克牌總和
@@ -867,12 +864,12 @@ print(total)
 ```python
 t=0
 for i in range(5):
-   n=str(input())
-   if(n=='J'):   t+=11
-   elif(n=='Q'): t+=12
-   elif(n=='K'): t+=13
-   elif(n=='A'): t+=1
-   else :   t+=int(n)
+    n=str(input())
+    if(n=='J'):   t+=11
+    elif(n=='Q'): t+=12
+    elif(n=='K'): t+=13
+    elif(n=='A'): t+=1
+    else :   t+=int(n)
 print(t)
 ```
 ## Python 603 數字排序
@@ -882,8 +879,8 @@ print(t)
 ```python
 m=[]
 for i in range(10):
-   n=int(input())
-   m.append(n)
+    n=int(input())
+    m.append(n)
 m=sorted(m)
 print(m[9],m[8],m[7])
 ```
@@ -897,8 +894,8 @@ print(m[9],m[8],m[7])
 ```python
 m=[0]*100
 for i in range(10):
-   n=int(input())
-   m[n]+=1
+    n=int(input())
+    m[n]+=1
 print(m.index(max(m)))  #取得位址
 print(max(m))
 ```
@@ -906,11 +903,11 @@ print(max(m))
 ```python
 m=[0]*100
 for i in range(10):
-   n=int(input())
-   m[n]+=1
+    n=int(input())
+    m[n]+=1
 for i in range(0,100):
-  if(max(m)==m[i]):
-     print(i)
+    if(max(m)==m[i]):
+        print(i)
 print(max(m))
 ```
 ## Python 605 成績計算
@@ -922,8 +919,8 @@ print(max(m))
 ```python
 n=[]
 for i in range(10):
-  x=eval(input())
-  n.append(x)
+    x=eval(input())
+    n.append(x)
 s=sum(n)-max(n)-min(n)
 print(s)
 print("%.2f"%(s/(10-2)))
@@ -942,7 +939,7 @@ print("%.2f"%(s/(10-2)))
 def compute(r,c):
     for i in range(r):
         for j in range(c):
-          print("%4d"%(j-i), end='')
+            print("%4d"%(j-i), end='')
         print()
 r = int(input())
 c = int(input())
@@ -960,14 +957,14 @@ compute(r,c)
 n=["1st","2nd","3rd"]
 t=[[0 for j in range(5)] for i in range(3)]
 for i in range(3):
-  print("The {} student:".format(n[i]))
-  for j in range(5):
-    t[i][j]=int(input())
+    print("The {} student:".format(n[i]))
+    for j in range(5):
+        t[i][j]=int(input())
  
 for i in range(3):
-  print("Student %d"%(i+1))
-  print("#Sum %d"%(sum(t[i])))
-  print("#Average %.2f"%(sum(t[i])/5))
+    print("Student %d"%(i+1))
+    print("#Sum %d"%(sum(t[i])))
+    print("#Average %.2f"%(sum(t[i])/5))
 ```
 ## Python 608 最大最小值索引
 設計說明：
@@ -988,8 +985,8 @@ print("Index of the smallest number {} is: ({}, {})".format(s,si//3,si%3))
 ```python
 a=[]
 for i in range(9):
-  n=int(input())
-  a.append(n)
+    n=int(input())
+    a.append(n)
 print(f'Index of the largest number {max(a)} is: ({(a.index(max(a)))//3}, {(a.index(max(a)))%3})')
 print(f'Index of the smallest number {min(a)} is: ({(a.index(min(a)))//3}, {(a.index(min(a)))%3})')
 ```
@@ -1014,19 +1011,19 @@ for i in range(2):
 print('Matrix 1:')
 for i in range(2):
     for j in range(2):
-      print(L1[i][j],end=' ')
+        print(L1[i][j],end=' ')
     print()
  
 print('Matrix 2:')
 for i in range(2):
     for j in range(2):
-      print(L2[i][j],end=' ')
+        print(L2[i][j],end=' ')
     print()
  
 print('Sum of 2 matrices:')
 for i in range(2):
     for j in range(2):
-      print((L1[i][j]+L2[i][j]),end=' ')
+        print((L1[i][j]+L2[i][j]),end=' ')
     print()
 ```
 ## Python 610 平均溫度
@@ -1039,10 +1036,10 @@ for i in range(2):
 ```python
 L=[]
 for w in range(1,4+1):
-  print("Week %d:"%w)
-  for D in range(1,3+1):
-    x=eval(input("Day %d:"%D))
-    L.append(x)
+    print("Week %d:"%w)
+    for D in range(1,3+1):
+        x=eval(input("Day %d:"%D))
+        L.append(x)
  
 A=sum(L)/len(L)
 print("Average: %.2f"%A)
@@ -1096,15 +1093,15 @@ print('Combined list after sorting:',LIST)
 t1=()
 print('Create tuple1:')
 while True : 
-     n=int(input())
-     if(n==-9999) : break
-     t1+=(n,)
+    n=int(input())
+    if(n==-9999) : break
+    t1+=(n,)
 t2=()
 print('Create tuple2:')
 while True : 
-     n=int(input())
-     if(n==-9999) : break
-     t2+=(n,)
+    n=int(input())
+    if(n==-9999) : break
+    t2+=(n,)
 t1 += t2
 print('Combined tuple before sorting:',t1)
 LIST = list(t1)
@@ -1145,9 +1142,9 @@ print('Sum:',sum(set1))
 ```python
 s1=set()
 while True : 
-  n=int(input())
-  if(n==-9999) : break
-  s1.add(n)
+    n=int(input())
+    if(n==-9999) : break
+    s1.add(n)
 print('Length:',len(s1))
 print('Max:',max(s1))
 print('Min:',min(s1))
@@ -1190,18 +1187,16 @@ print('set3 is superset of set1:',str(set3.issuperset(set1)))
 ### 解法(1)
 ```python
 count= eval(input())
-
 alpha=26
-
 for i in range(count):
- sentence = input()
- set1 = set(sentence.lower())
- if ' ' in set1:
-     set1.remove(' ')
- if len(set1) >= alpha:
-     print('True')
- else:
-     print('False')
+    sentence = input()
+    set1 = set(sentence.lower())
+    if ' ' in set1:
+        set1.remove(' ')
+    if len(set1) >= alpha:
+        print('True')
+    else:
+        print('False')
 ```
 ### 解法(2)
 ```python
@@ -1278,14 +1273,14 @@ for i in sorted(x.keys()):
 dc={}  #其實好像建一個dict就可以了
 print('Create dict1:')
 while True : 
-   k=input('Key: ')
-   if k=='end' : break
-   dc[k]=input('Value: ')
+    k=input('Key: ')
+    if k=='end' : break
+    dc[k]=input('Value: ')
 print('Create dict2:')
 while True : 
-   k=input('Key: ')
-   if k=='end' : break
-   dc[k]=input('Value: ')
+    k=input('Key: ')
+    if k=='end' : break
+    dc[k]=input('Value: ')
 for i in sorted(dc.keys()):
     print(i+": "+dc[i])
 ```
@@ -1376,10 +1371,10 @@ n=input()
 res = ""
 for i in n:
     if(i!=' ') : 
-      temp=ord(i)-32
-      res = res + chr(temp)
+        temp=ord(i)-32
+        res = res + chr(temp)
     else : 
-      res +=' '
+        res +=' '
 print(res)
 print(n[0].upper(),end='')
 for i in range(1,len(n)):
@@ -1426,10 +1421,10 @@ print(f'{s} occurs {compute(Str, s)} time(s)')
 ```python
 #不用函式的寫法
 def compute(n,m) :
-  ans=0 
-  for i in range(len(n)):
-    if(n[i]==m): ans+=1
-  print(f'{m} occurs {ans} time(s)')
+    ans=0 
+    for i in range(len(n)):
+        if(n[i]==m): ans+=1
+    print(f'{m} occurs {ans} time(s)')
 compute(input(),input())
 ```
 ## Python 807 字串加總
@@ -1442,8 +1437,8 @@ compute(input(),input())
 m=list(map(int,input().split()))
 j=sum=0
 for i in m:
-      sum+=i
-      j+=1
+    sum+=i
+    j+=1
 print(f'Total = {sum}')
 print(f'Average = {sum/j}')
 ```
@@ -1471,7 +1466,7 @@ else:               print('Invalid SSN')
 n = input()
 b=0
 for i in range(len(n)):
-  if n[i].isupper():  b=1
+    if n[i].isupper():  b=1
 if b==1 and len(n)>=8 and n.isalnum():  print("Valid password")
 else:   print("Invalid password")
 ```
@@ -1485,8 +1480,8 @@ else:   print("Invalid password")
 
 ```python
 for i in range(int(input())):
-   data=list(map(float,input().split()))
-   print('{:.2f}'.format( max( data ) - min( data )))
+    data=list(map(float,input().split()))
+    print('{:.2f}'.format( max( data ) - min( data )))
 ```
 # Python 第9類：檔案與異常處理
 ## Python 901 成績資料
@@ -1515,7 +1510,7 @@ w=f.read()
 sp=w.split(" ")
 total=0
 for x in sp:
-  total+=eval(x)
+    total+=eval(x)
 print(total)
 ```
 ## Python 903 成績資料
@@ -1553,19 +1548,19 @@ f=open("read.txt","r")
 w=f.readlines()
 
 for x in w:
-  print(x)
-  ss=x.split(" ")
+    print(x)
+    ss=x.split(" ")
   
-  height.append(eval(ss[1]))
-  weight.append(eval(ss[2]))
+    height.append(eval(ss[1]))
+    weight.append(eval(ss[2]))
 
-  if (eval(ss[1])>maxh):
-    maxh=eval(ss[1])
-    hname=ss[0]
+    if (eval(ss[1])>maxh):
+        maxh=eval(ss[1])
+        hname=ss[0]
 
-  if (eval(ss[2])>maxw):
-    maxw=eval(ss[2]) 
-    wname=ss[0] 
+    if (eval(ss[2])>maxw):
+        maxw=eval(ss[2]) 
+        wname=ss[0] 
   
 avgh=sum(height)/len(height)
 avgw=sum(weight)/len(weight)
@@ -1643,8 +1638,8 @@ w=f.read()
 sp1=w.split()
 setsp1=sorted(set(sp1))
 for i in setsp1:
-  if(sp1.count(i) == num):
-    print(i,end='\n')
+    if(sp1.count(i) == num):
+        print(i,end='\n')
 ```
 ## Python 909 聯絡人資料
 設計說明：
@@ -1654,13 +1649,13 @@ for i in setsp1:
 
 ```python
 with open("data.dat","w",encoding="UTF-8") as fp:
-  for i in range(5):
-      fp.write(input()+"\n")
+    for i in range(5):
+        fp.write(input()+"\n")
  
 print('The content of "data.dat":')
 with open("data.dat","r",encoding="UTF-8") as fp:
-  for i in fp:
-      print(i)
+    for i in fp:
+        print(i)
 ```
 ## Python 910 學生基本資料
 設計說明：
@@ -1674,12 +1669,12 @@ F=0
 f=open('read.dat','r')
 w=f.readlines()
 for i in w:
-  print(i)
-  sp=i.split()
-  if(sp[2]=="1"):
-    M+=1
-  elif(sp[2]=="0"):
-    F+=1
+    print(i)
+    sp=i.split()
+    if(sp[2]=="1"):
+        M+=1
+    elif(sp[2]=="0"):
+        F+=1
 print("Number of males: {}".format(M))
 print("Number of females: {}".format(F))
 ```
