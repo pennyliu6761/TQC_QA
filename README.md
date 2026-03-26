@@ -99,7 +99,7 @@ print("Speed = %.1f"%(s))
 請撰寫一程式，讓使用者輸入五個數字，計算並輸出這五個數字之數值、總和及平均數。
 提示：總和與平均數皆輸出到小數點後第1位。
 
-![](https://i.imgur.com/cgvyQDs.png)
+<img width="883" height="322" alt="image" src="https://github.com/user-attachments/assets/dc34ec19-ed16-4662-b949-748786d20def" />
 
 ```python
 l=[0]*5
@@ -115,10 +115,10 @@ print('Average = %.1f'%(sum(l)/len(l)))
 
 ## Python 108 座標距離計算
 請撰寫一程式，讓使用者輸入四個數字x1、y1、x2、y2，分別代表兩個點的座標(x1, y1)、(x2, y2)。計算並輸出這兩點的座標與其歐式距離。
-提示1：歐式距離 $= \sqrt{((x1-x2)^2+(y1-y2)^2)}$
+提示1：$歐式距離 = \sqrt{((x1-x2)^2+(y1-y2)^2)}$
 提示2：兩座標的歐式距離，輸出到小數點後第4位
 
-![](https://i.imgur.com/GAAdJ22.png)
+<img width="887" height="306" alt="image" src="https://github.com/user-attachments/assets/a4586ebe-0900-45b5-9c26-0b1114c1f4d3" />
 
 ```python
 x1=eval(input())
@@ -136,7 +136,7 @@ print('Distance = %.4f'% ((x1-x2)**2+(y1-y2)**2)**0.5)
 提示2：正五邊形面積的公式： $Area=(5 * s^2)/(4 * tan(pi/5))$
 提示3：輸出浮點數到小數點後第四位。
 
-![](https://i.imgur.com/u2vl0WZ.png)
+<img width="873" height="206" alt="image" src="https://github.com/user-attachments/assets/76388d95-70f5-479b-8fdf-4e2f39564b67" />
 
 ```python
 import math
@@ -149,7 +149,7 @@ print('Area = %.4f'%((5*s**2)/(4*math.tan(math.pi/5))))
 提示2：正n邊形面積的公式如下：$Area = (n * s^2) / (4 * tan(pi/n))$
 提示3：輸出浮點數到小數點後第四位
 
-![](https://i.imgur.com/eooV6nO.png)
+<img width="868" height="228" alt="image" src="https://github.com/user-attachments/assets/b968deb4-c24d-433d-9ab0-c81809fb880b" />
 
 ```python
 import math
@@ -437,10 +437,10 @@ for i in range(n):
 請使用迴圈敘述撰寫一程式，提示使用者輸入金額（如10,000）、年收益率（如5.75），以及經過的月份數（如5），接著顯示每個月的存款總額。
 提示：四捨五入，輸出浮點數到小數點後第二位。
 舉例：
-假設您存款$10,000，年收益為5.75%。
-過了一個月，存款會是：10000 + 10000 * 5.75 / 1200 = 10047.92
-過了兩個月，存款會是：10047.92 + 10047.92 * 5.75 / 1200 = 10096.06
-過了三個月，存款將是：10096.06 + 10096.06 * 5.75 / 1200 = 10144.44
+- 假設您存款$10,000，年收益為5.75%。
+- 過了一個月，存款會是：10000 + 10000 * 5.75 / 1200 = 10047.92
+- 過了兩個月，存款會是：10047.92 + 10047.92 * 5.75 / 1200 = 10096.06
+- 過了三個月，存款將是：10096.06 + 10096.06 * 5.75 / 1200 = 10144.44
 以此類推。
 
 ![](https://i.imgur.com/OVKIioN.png)
