@@ -93,6 +93,8 @@ else : print('F')
 |28,000（含）以上|8折|
 |38,000（含）以上|7折|
 
+<img width="372" height="217" alt="image" src="https://github.com/user-attachments/assets/42c28e5d-3c32-4cb7-bb8f-4c252e567631" />
+
 ```python
 n=int(input())
 if(n>=8000 and n<18000) : print(n*0.95)
