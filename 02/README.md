@@ -147,7 +147,7 @@ else: print('Outside')
 a=int(input())
 b=int(input())
 c=int(input())
-if(a+b>c and a+c>b and a+b>c): print(a+b+c)
+if(a+b>c and a+c>b and b+c>a): print(a+b+c)
 else : print(Invalid)
 ```
 ---
