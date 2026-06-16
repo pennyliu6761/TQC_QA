@@ -57,7 +57,7 @@ elif(c=='%'): print(a%b)
 ![](https://i.imgur.com/zMFwyzJ.png)
 
 ```python
-n=str(input())
+n=input()
 if(n.isdigit()): print(f'{n} is a number.')
 elif(n.isalpha()) : print(f'{n} is an alphabet.')
 else : print(f'{n} is a symbol.')
