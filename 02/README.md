@@ -42,7 +42,7 @@ else : print(f'{n} is not a leap year.')
 ```python
 a=eval(input())
 b=eval(input())
-c=str(input())
+c=input()
 if(c=='+'): print(a+b)
 elif(c=='-'): print(a-b)
 elif(c=='*'): print(a*b)
